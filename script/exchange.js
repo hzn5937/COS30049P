@@ -12,7 +12,11 @@ function checkValue() {
     if (x < coinCost) {error += 'Not enough money\n'} 
     if (error != '') {
         alert(error);
-    } else {printCoin(x);}
+        document.getElementById('exchange').value = null;
+    } else {
+        printCoin(x);
+        document.getElementById('exchange').value = null;
+    }
 }
 function printCoin(value) {
     var x = Math.floor(value/coinCost);
