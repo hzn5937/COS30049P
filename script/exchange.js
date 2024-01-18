@@ -8,16 +8,14 @@ window.onload = function() {
 }
 function coinEarnedCheck() {
     x = document.getElementById('exchange').value;
-    coinEarned = Math.round((x/coinCost) * 10)/10;
-    if (coinEarned < 1) {coinEarned = 0;}
-    if (!coinEarned.match(/^\d+$/)) {coinEarned = 0;}
+    if ((x < coinCost) || (!x.match(/^\d+$/))) {coinEarned = 0;}
+    else {coinEarned = Math.round((x/coinCost) * 10)/10;}
     document.getElementById('coinEarned').innerHTML = 'Number of coins earned: ' + coinEarned;
 }
 function checkValue() {
     var error = '';
     x = document.getElementById('exchange').value
-    var pattern = /^\d+$/; 
-    if (!x.match(pattern)) {error += "Wrong value type inserted\n";}
+    if (!x.match(/^\d+$/)) {error += "Wrong value type inserted\n";}
     if (x < coinCost) {error += 'Not enough money\n'} 
     if (error != '') {
         alert(error);
