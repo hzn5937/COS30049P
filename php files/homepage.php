@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/homepage.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script/slide.js"></script>
+    <script src="../script/slide.js"></script>
 </head>
 
 <body>
@@ -44,7 +44,7 @@
 
             <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
-                <img src="/images/fifa_big.jpg" style="width:100%">
+                <img src="../images/fifa_big.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
