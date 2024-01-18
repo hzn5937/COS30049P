@@ -8,5 +8,5 @@
         <li><a href="about.php" <?php if(basename($_SERVER['PHP_SELF']) == 'about.php') { echo 'class="active"'; } ?>>About Us</a></li>
     </ul>
 
-    <a href="signup.php" class="button">Log In / Sign Up</a>
+    <a href="login.php" class="button">Log In / Sign Up</a>
 </nav>
