@@ -16,7 +16,12 @@
         <?php
             include "../components/header.inc";
         ?>
-
+        <h1>Exchange for Coins</h1>
+        <p id="coinCost"></p>
+        <label for="exchange"></label>
+        <input type="text" id="exchange" name="exchange" value="" placeholder="$">
+        <button id="btn" onclick="checkValue();">Exchange</button><br>
+        <p id="coin">Coins: </p><br>
         <?php
             include "../components/footer.inc";
         ?>
