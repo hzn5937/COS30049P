@@ -1,0 +1,36 @@
+/*
+filename: about.css
+author: Group 03 
+created: 14/1/2024
+last modified: 18/1/2024
+description: CSS file for about.php
+*/
+
+.info_card {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+}
+
+.info_card img {
+    width: 100%;
+    height: auto;
+}
+
+.info_card h2 {
+    background-color: indianred;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info_card p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.container .content {
+    margin: 0px;
+}
