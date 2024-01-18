@@ -18,16 +18,16 @@
     <div class="container">
 
         <nav>
-            <a href="homepage.html"><img src="../images/weblogo.png" alt="WebsiteLogo" class="logo"></a>
+            <a href="homepage.php"><img src="../images/weblogo.png" alt="WebsiteLogo" class="logo"></a>
 
             <ul>
-                <li><a href="homepage.html" class="active">Home</a></li>
-                <li><a href="market.html">Our Product</a></li>
-                <li><a href="exchange.html">Exchange</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="homepage.php" class="active">Home</a></li>
+                <li><a href="market.php">Our Product</a></li>
+                <li><a href="exchange.php">Exchange</a></li>
+                <li><a href="about.php">About Us</a></li>
             </ul>
 
-            <a href="signup.html" class="button">Log In / Sign Up</a>
+            <a href="signup.php" class="button">Log In / Sign Up</a>
         </nav>
 
         <div class="main_content">

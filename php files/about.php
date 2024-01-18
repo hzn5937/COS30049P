@@ -13,8 +13,13 @@
 </head>
 <body>
     <div class="container">
+        <?php
+            include "../components/header.inc";
+        ?>
 
-
+        <?php
+            include "../components/footer.inc";
+        ?>
     </div>
 </body>
 </html>

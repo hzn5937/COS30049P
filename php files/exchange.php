@@ -14,11 +14,11 @@
 <body>
     <div class="container">
         <?php
-            include "/componenets/header.inc";
+            include "../components/header.inc";
         ?>
 
         <?php
-            include "/componenets/footer.inc";
+            include "../components/footer.inc";
         ?>
     </div>
 </body>
