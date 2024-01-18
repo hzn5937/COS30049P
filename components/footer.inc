@@ -10,10 +10,10 @@
         </div>
 
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="homepage.html">Home</a></li>
-            <li class="list-inline-item"><a href="market.html">Our Product</a></li>
-            <li class="list-inline-item"><a href="exchange.html">Exchange</a></li>
-            <li class="list-inline-item"><a href="about.html">About Us</a></li>
+            <li class="list-inline-item"><a href="homepage.php">Home</a></li>
+            <li class="list-inline-item"><a href="market.php">Our Product</a></li>
+            <li class="list-inline-item"><a href="exchange.php">Exchange</a></li>
+            <li class="list-inline-item"><a href="about.php">About Us</a></li>
         </ul>
         <p>&copy; GameDex, Ltd. All Rights Reserved.</p>
     </div>
