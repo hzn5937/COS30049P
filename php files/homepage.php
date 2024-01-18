@@ -17,25 +17,16 @@
 <body>
     <div class="container">
 
-        <nav>
-            <a href="homepage.php"><img src="../images/weblogo.png" alt="WebsiteLogo" class="logo"></a>
-
-            <ul>
-                <li><a href="homepage.php" class="active">Home</a></li>
-                <li><a href="market.php">Our Product</a></li>
-                <li><a href="exchange.php">Exchange</a></li>
-                <li><a href="about.php">About Us</a></li>
-            </ul>
-
-            <a href="signup.php" class="button">Log In / Sign Up</a>
-        </nav>
+        <?php
+            include "../components/header.inc";
+        ?>
 
         <div class="main_content">
             <h1>Welcome To <span>GameDex Store</span></h1>
             <h2>World's First <span>Cryptocurrency Game Store</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Impedit minima veritatis cupiditate hic.</p>
-            <a href="market.html" class="button">Explore Now</a>
-            <a href="exchange.html" class="button">Buy Now</a>
+            <a href="market.php" class="button">Explore Now</a>
+            <a href="exchange.php" class="button">Buy Now</a>
         </div>
 
         <div class="sale">
@@ -116,26 +107,9 @@
             </div>
         </div>
 
-        <footer>
-            <div class="main-footer">
-                <hr class="hr-footer">
-                    
-                <div class="icon-footer">
-                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
-                    <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a href="mailto:bachnhswh00470@fpt.edu.vn"><i class="fa fa-google-plus-circle"></i></a>
-                </div>
-            
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="homepage.html">Home</a></li>
-                    <li class="list-inline-item"><a href="market.html">Our Product</a></li>
-                    <li class="list-inline-item"><a href="exchange.html">Exchange</a></li>
-                    <li class="list-inline-item"><a href="about.html">About Us</a></li>
-                </ul>
-                <p>&copy; GameDex, Ltd. All Rights Reserved.</p>
-            </div>
-        </footer>
+        <?php
+            include "../components/footer.inc";
+        ?>
 
     </div>
 
