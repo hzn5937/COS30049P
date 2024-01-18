@@ -10,6 +10,7 @@ window.onload = function () {
 };
 
 function coinEarnedCheck() {
+    x = document.getElementById("exchange").value;
     if (x < coinCost || !x.match(digit)) {
         coinEarned = 0;
     } else {
@@ -19,6 +20,8 @@ function coinEarnedCheck() {
 }
 function checkValue() {
     var error = "";
+    x = document.getElementById("exchange").value;
+
     if (!x.match(digit)) {
         error += "Wrong value type inserted\n";
     }
@@ -27,10 +30,10 @@ function checkValue() {
     }
     if (error != "") {
         alert(error);
-        document.getElementById("exchange").value = null;
+        x = null;
     } else {
         printCoin(x);
-        document.getElementById("exchange").value = null;
+        x = null;
     }
 }
 function printCoin(value) {
