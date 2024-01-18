@@ -6,6 +6,11 @@ window.onload = function() {
     document.getElementById('coin').innerHTML = 'Total Coins: ' + coinCount;
     document.getElementById('coinEarned').innerHTML = 'Number of coins earned: ' + coinEarned;
 }
+function coinEarnedCheck() {
+    x = document.getElementById('exchange').value;
+    coinEarned = Math.round((x/coinCost) * 10)/10;
+    document.getElementById('coinEarned').innerHTML = 'Number of coins earned: ' + coinEarned;
+}
 function checkValue() {
     var error = '';
     x = document.getElementById('exchange').value
@@ -23,7 +28,5 @@ function checkValue() {
 function printCoin(value) {
     var x = Math.round((value/coinCost) * 10)/10;
     coinCount += x;
-    coinEarned = x;
     document.getElementById('coin').innerHTML = 'Total Coins: ' + coinCount;
-    document.getElementById('coinEarned').innerHTML = 'Number of coins earned: ' + coinEarned;
 }

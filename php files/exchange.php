@@ -19,8 +19,8 @@
         <h1>Exchange for Coins</h1>
         <h3 id="coinCost"></h3>
         <label for="exchange"></label>
-        <input type="text" id="exchange" name="exchange" value="" placeholder="$">
-        <button id="btn" onclick="checkValue();">Exchange</button><br>
+        <input type="text" id="exchange" name="exchange" value="" placeholder="$" onchange="coinEarnedCheck();">
+        <button id="btn" onclick="checkValue();">Pay</button><br>
         <p id="coinEarned">Number of coins earned: </p>
         <p id="coin">Total Coins: </p><br>
         <script src="../script/exchange.js"></script>
