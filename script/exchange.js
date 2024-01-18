@@ -1,8 +1,10 @@
 var coinCost = 40;
 var coinCount = 0;
+var coinEarned = 0;
 window.onload = function() {
-    x = document.getElementById('coinCost').innerHTML = 'Cost for 1 coin: ' + coinCost + '$';
-    y = document.getElementById('coin').innerHTML = 'Coints: ' + coinCount
+    document.getElementById('coinCost').innerHTML = 'Cost for 1 coin: ' + coinCost + '$';
+    document.getElementById('coin').innerHTML = 'Total Coins: ' + coinCount;
+    document.getElementById('coinEarned').innerHTML = 'Number of coins earned: ' + coinEarned;
 }
 function checkValue() {
     var error = '';
@@ -19,7 +21,9 @@ function checkValue() {
     }
 }
 function printCoin(value) {
-    var x = Math.floor(value/coinCost);
+    var x = Math.round((value/coinCost) * 10)/10;
     coinCount += x;
-    document.getElementById('coin').innerHTML = 'Coins: ' + coinCount;
+    coinEarned = x;
+    document.getElementById('coin').innerHTML = 'Total Coins: ' + coinCount;
+    document.getElementById('coinEarned').innerHTML = 'Number of coins earned: ' + coinEarned;
 }

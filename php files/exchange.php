@@ -17,11 +17,13 @@
             include "../components/header.inc";
         ?>
         <h1>Exchange for Coins</h1>
-        <p id="coinCost"></p>
+        <h3 id="coinCost"></h3>
         <label for="exchange"></label>
         <input type="text" id="exchange" name="exchange" value="" placeholder="$">
         <button id="btn" onclick="checkValue();">Exchange</button><br>
-        <p id="coin">Coins: </p><br>
+        <p id="coinEarned">Number of coins earned: </p>
+        <p id="coin">Total Coins: </p><br>
+        <script src="../script/exchange.js"></script>
         <?php
             include "../components/footer.inc";
         ?>
