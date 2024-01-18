@@ -10,6 +10,7 @@ function coinEarnedCheck() {
     x = document.getElementById('exchange').value;
     coinEarned = Math.round((x/coinCost) * 10)/10;
     if (coinEarned < 1) {coinEarned = 0;}
+    if (!coinEarned.match(/^\d+$/)) {coinEarned = 0;}
     document.getElementById('coinEarned').innerHTML = 'Number of coins earned: ' + coinEarned;
 }
 function checkValue() {
