@@ -8,7 +8,7 @@
         <li><a href="about.php" <?php if(basename($_SERVER['PHP_SELF']) == 'about.php') { echo 'class="active"'; } ?>>About Us</a></li>
     </ul>
 
-    <span id="totalCoin">0</span><img src="../images/coin.png" id="coinIcon">
+    <span id="totalCoin">0</span><img src="../images/coin.png" class="coinIcon">
 
     <a href="login.php" class="button">Log In / Sign Up</a>
 </nav>
