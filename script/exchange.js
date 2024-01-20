@@ -1,43 +1,46 @@
-var coinCost = 40;
+const coinCost = 40;
 var coinCount = 0;
-var coinEarned = 0;
-var digit = /^\d+$/;
+var totalCost = 0;
+const decimal = /^\d*\.?\d+$/;
+
+const coinInput = document.getElementById("exchange");
+const totalCostElement = document.getElementById("totalCost");
+const totalCoin = document.getElementById("totalCoin");
 
 window.onload = function () {
     document.getElementById("coinCost").innerHTML = "Cost for 1 coin: " + coinCost + "$";
-    document.getElementById("coin").innerHTML = "Total Coins: " + coinCount;
-    document.getElementById("coinEarned").innerHTML = "Number of coins earned: " + coinEarned;
+    totalCoin.innerHTML = coinCount;
+    totalCostElement.innerHTML = "Total cost: " + totalCost + "$";
 };
 
-function coinEarnedCheck() {
-    x = document.getElementById("exchange").value;
-    if (x < coinCost || !x.match(digit)) {
-        coinEarned = 0;
+function totalCostCheck() {
+    totalCoinInput = coinInput.value;
+    if (totalCoinInput < 1 || !totalCoinInput.match(decimal)) {
+        totalCost = 0;
     } else {
-        coinEarned = Math.round((x / coinCost) * 10) / 10;
+        totalCost = totalCoinInput * coinCost;
     }
-    document.getElementById("coinEarned").innerHTML = "Number of coins earned: " + coinEarned;
+    document.getElementById("totalCost").innerHTML = "Total cost: " + totalCost + "$";
 }
 function checkValue() {
     var error = "";
-    x = document.getElementById("exchange").value;
+    totalCoinInput = coinInput.value;
 
-    if (!x.match(digit)) {
-        error += "Wrong value type inserted\n";
+    if (!totalCoinInput.match(decimal)) {
+        error += "Wrong value type inserted.\n";
     }
-    if (x < coinCost) {
-        error += "Not enough money\n";
+    if (totalCoinInput < 1) {
+        error += "Minimum deposit is 1 coin.\n";
     }
     if (error != "") {
         alert(error);
-        x = null;
+        totalCoinInput.innerHTML = null;
     } else {
-        printCoin(x);
-        x = null;
+        printCoin(totalCoinInput);
+        totalCoinInput.innerHTML = null;
     }
 }
 function printCoin(value) {
-    var x = Math.round((value / coinCost) * 10) / 10;
-    coinCount += x;
-    document.getElementById("coin").innerHTML = "Total Coins: " + coinCount;
+    coinCount += parseInt(value);
+    totalCoin.innerHTML = coinCount;
 }
