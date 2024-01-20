@@ -33,8 +33,8 @@
             </div>
 
             <div class="info_card">
-                <img src="../images/hbach.jpg" alt="Member 1">
-                <h2>Nguyen Ha Bach</h2>
+                <img src="../images/thanhbach.jpg" alt="Member 2">
+                <h2>Phan Thanh Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
                     voluptatum fugit explicabo est, illum iure suscipit rerum tempora numquam, sapiente a molestiae!

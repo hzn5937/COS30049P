@@ -19,6 +19,11 @@ description: CSS file for about.php
     width: 100%;
     height: auto;
 }
+.info_card h1 {
+    background-color: indianred;
+    text-align: center;
+    margin-top: 10px;
+}
 
 .info_card h2 {
     background-color: indianred;
