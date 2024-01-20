@@ -1,0 +1,127 @@
+
+h1{
+    margin-left: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: auto;
+    flex-wrap: wrap;
+    color:red;
+}
+
+div.gallery {
+    border: 10px solid red;
+  }
+  
+  div.gallery:hover {
+    border: 10px solid red;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    margin-top: 10px;
+    padding: 0 10px;
+    float: left;
+    width: 33.3333333%;
+  }
+  .responsive2 {
+    margin-top: 10%;
+    margin-bottom: 15%;
+    padding: 0 10px;
+    float: left;
+    width: 33.3333333%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h4{
+    margin: 100px 0px;
+    margin-right: 50%;
+    margin-bottom: 110%;
+    color: white;
+    text-decoration:dotted;
+  }
+
+.section-title h4:after{
+	position: absolute;
+	left: 0;
+	top: -6px;
+	height: 32px;
+	width: 4px;
+	background: #e53637;
+	content: "";
+}
+.section-title {
+	width: 200px;
+    min-height: 25px;
+}
+.button2 {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: red;
+   margin-left: 130px;
+   text-decoration: none;
+   text-align: center;
+   border-radius: 10px;
+   color: #ffffff;
+   font-size: 18px;
+   padding: 20px;
+   transition: all 0.5s;
+   cursor: pointer;
+   width: 100px;
+   margin-top: 5%;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.9s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 2px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
