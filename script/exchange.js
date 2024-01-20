@@ -34,10 +34,10 @@ function checkValue() {
     }
     if (error != "") {
         alert(error);
-        totalCoinInput.innerHTML = null;
+        coinInput.value = "";
     } else {
         printCoin(totalCoinInput);
-        totalCoinInput.innerHTML = null;
+        coinInput.value = "";
     }
 }
 function printCoin(value) {
