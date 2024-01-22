@@ -1,3 +1,19 @@
+/*
+filename: styles.css
+author: Group 03 
+created: 14/1/2024
+last modified: 18/1/2024
+description: CSS file for shared properties between pages
+*/
+
+/* Styling All Body Content */
+
+html {
+    background-image: linear-gradient(rgb(21, 13, 107) 1.1%, rgb(188, 16, 80) 130.5%);
+    background-size: cover;
+    min-height: 100vh;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -7,19 +23,26 @@ body {
     box-sizing: border-box;
 }
 
+/* Main Content Styling */
 .container {
     width: 100%;
-    height: 100em;
-    background-image: url(../images/background.jpg);
-    background-size: cover;
+    height: 100%;
     padding: 0 7%;
     color: #fff;
 }
 
+.coinIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Logo Styling */
 .logo {
     width: 150px;
 }
 
+/* Navigation Bar Styling */
 nav {
     width: 100%;
     padding: 20px 0;
@@ -57,6 +80,7 @@ nav li .active {
     font-weight: bolder;
 }
 
+/* Webpage Footer Styling */
 .main-footer {
     padding: 0;
     list-style: none;
@@ -88,6 +112,7 @@ nav li .active {
     color: indianred;
 }
 
+/* Styling The Icon In Footer */
 .main-footer .icon-footer {
     text-align: center;
 }

@@ -1,12 +1,14 @@
 <nav>
-    <a href="homepage.html"><img src="../images/weblogo.png" alt="WebsiteLogo" class="logo"></a>
+    <a href="homepage.php"><img src="../images/weblogo.png" alt="WebsiteLogo" class="logo"></a>
 
     <ul>
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="market.html">Our Product</a></li>
-        <li><a href="exchange.html" class="active">Exchange</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="homepage.php" <?php if(basename($_SERVER['PHP_SELF']) == 'homepage.php') { echo 'class="active"'; } ?>>Home</a></li>
+        <li><a href="market.php" <?php if(basename($_SERVER['PHP_SELF']) == 'market.php') { echo 'class="active"'; } ?>>Our Product</a></li>
+        <li><a href="exchange.php" <?php if(basename($_SERVER['PHP_SELF']) == 'exchange.php') { echo 'class="active"'; } ?>>Exchange</a></li>
+        <li><a href="about.php" <?php if(basename($_SERVER['PHP_SELF']) == 'about.php') { echo 'class="active"'; } ?>>About Us</a></li>
     </ul>
 
-    <a href="signup.html" class="button">Log In / Sign Up</a>
+    <span id="totalCoin">0</span><img src="../images/coin.png" class="coinIcon">
+
+    <a href="login.php" class="button">Log In / Sign Up</a>
 </nav>

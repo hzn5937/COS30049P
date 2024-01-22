@@ -14,11 +14,18 @@
 <body>
     <div class="container">
         <?php
-            include "/componenets/header.inc";
+            include "../components/header.inc";
         ?>
-
+        <h1>Exchange for Coins</h1>
+        <h3 id="coinCost"></h3>
+        <h4>Enter number of coin:</h4>
+        <label for="exchange"></label>
+        <input type="text" id="exchange" name="exchange" value="" placeholder="$" oninput="totalCostCheck();">
+        <button id="btn" onclick="checkValue();">Pay</button><br>
+        <p id="totalCost">Total cost: </p>
+        <script src="../script/exchange.js"></script>
         <?php
-            include "/componenets/footer.inc";
+            include "../components/footer.inc";
         ?>
     </div>
 </body>
