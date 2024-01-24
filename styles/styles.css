@@ -119,6 +119,13 @@ nav li .active {
     color: #999;
 }
 
+nav .profileButton {
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    color: black;
+}
+
 /* Webpage Footer Styling */
 .main-footer {
     padding: 0;
