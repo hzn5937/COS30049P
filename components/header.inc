@@ -18,4 +18,5 @@
     <span id="totalCoin">0</span><img src="../images/coin.png" class="coinIcon">
 
     <a href="login.php" class="button">Log In / Sign Up</a>
+    <a href="profile.php"></a>
 </nav>
