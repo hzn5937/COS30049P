@@ -47,7 +47,7 @@ body {
    transform: translateX(0);
 }
 
-.wrapper.active .form-box .login{
+.wrapper.active .form-box.login{
     transition: none;
     transform: translateX(-400px);
 }
@@ -58,7 +58,7 @@ body {
     transform: translateX(400px);
 }
 
-.wrapper.active .form-box .register {
+.wrapper.active .form-box.register {
     transition: transform .18s ease;
     transform: translateX(0);
  }
