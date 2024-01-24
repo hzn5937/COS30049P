@@ -14,38 +14,123 @@
 </head>
 <body>
     <div class="container">
-        <nav>
-            <a href="homepage.html"><img src="../images/weblogo.png" alt="WebsiteLogo" class="logo"></a>
-
-            <ul>
-                <li><a href="homepage.html" class="active">Home</a></li>
-                <li><a href="market.html">Our Product</a></li>
-                <li><a href="exchange.html">Exchange</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-
-            <a href="signup.html" class="button">Log In / Sign Up</a>
-        </nav>
-        <footer>
-            <div class="main-footer">
-                <hr class="hr-footer">
-                    
-                <div class="icon-footer">
-                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
-                    <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a href="mailto:bachnhswh00470@fpt.edu.vn"><i class="fa fa-google-plus-circle"></i></a>
+        <?php
+            include "../components/header.inc";
+        ?>
+        
+        <div class="shopping-container">
+            <fieldset class="cart-table">
+                <legend>
+                    <h1>Shopping Cart</h1>
+                </legend>
+                
+                <div class="shopping-cart"> 
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Total Price</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img src="../images/mine_small.jpg">
+                                    <div>
+                                        <p>Minecraft</p>
+                                        <small>Java Edition</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>
+                                <div class="price-info">
+                                    <img src="../images/coin.png">
+                                    <p>30</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img src="../images/fifa_small.jpg">
+                                    <div>
+                                        <p>Fifa 23</p>
+                                        <small></small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>
+                                <div class="price-info">
+                                    <img src="../images/coin.png">
+                                    <p>30</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img src="../images/gta_small.jpg">
+                                    <div>
+                                        <p>Grand Thief Auto V</p>
+                                        <small></small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>
+                                <div class="price-info">
+                                    <img src="../images/coin.png">
+                                    <p>30</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-            
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="homepage.html">Home</a></li>
-                    <li class="list-inline-item"><a href="market.html">Our Product</a></li>
-                    <li class="list-inline-item"><a href="exchange.html">Exchange</a></li>
-                    <li class="list-inline-item"><a href="about.html">About Us</a></li>
-                </ul>
-                <p>&copy; GameDex, Ltd. All Rights Reserved.</p>
+            </fieldset>
+
+            <div class="subtotal-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>
+                            <div class="price-info">
+                                <img src="../images/coin.png">
+                                <p>90</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td>
+                            <div class="price-info">
+                                <img src="../images/coin.png">
+                                <p>0</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
-        </footer>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Total</td>
+                        <td>
+                            <div class="total-price-info">
+                                <img src="../images/coin.png">
+                                <p>90</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <?php
+            include "../components/footer.inc";
+        ?>
     </div>
 </body>
 </html>
