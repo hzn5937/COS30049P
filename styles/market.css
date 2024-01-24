@@ -1,78 +1,78 @@
-
-h1{
-    margin-left: 5px;
-    margin-bottom: 30px;
-    text-align: center;
-    padding: auto;
-    flex-wrap: wrap;
-    color:red;
+h1 {
+  margin-left: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: auto;
+  flex-wrap: wrap;
+  color: indianred;
 }
 
 
-.window{
-  border: 5px solid red;
+.window {
+  border: 5px solid indianred;
 }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  margin-top: 10px;
+  padding: 0 10px;
+  float: left;
+  width: 33%;
+}
+
+.cashless {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 15px;
+  color: white;
+  border-color: #ffffff;
+
+}
+
+.responsive2 {
+  margin-top: 10%;
+  margin-bottom: 15%;
+  padding: 0 10px;
+  float: left;
+  width: 33%;
+}
+
+@media only screen and (max-width: 700px) {
   .responsive {
-    margin-top: 10px;
-    padding: 0 10px;
-    float: left;
-    width: 33%;
+    width: 49.99999%;
+    margin: 6px 0;
   }
+}
 
-  .cashless {
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    border: 15px;
-    color:white;
-    border-color: #ffffff;
-    
-    }
-  .responsive2 {
-    margin-top: 10%;
-    margin-bottom: 15%;
-    padding: 0 10px;
-    float: left;
-    width: 33%;
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
   }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .section-title {
-	width: 200px;
-    min-height: 25px;
+  width: 200px;
+  min-height: 25px;
 }
 
 .button2 span {
@@ -95,15 +95,17 @@ h1{
 .button2:hover span {
   padding-right: 2px;
 }
+
 .button2:hover {
-  background-color: #0056b3; /* Change color on hover if needed */
+  background-color: #0056b3;
+  /* Change color on hover if needed */
 }
 
 /* Style the button */
 .button2 {
-display: inline-block;
+  display: inline-block;
   padding: 10px 20px;
-  background-color: red;
+  background-color: indianred;
   text-decoration: none;
   text-align: center;
   border-radius: 10px;
@@ -114,10 +116,13 @@ display: inline-block;
   cursor: pointer;
   width: 100px;
   margin-top: 5%;
-  position:relative;
+  position: relative;
   cursor: pointer;
 }
+
 .coin-image {
-  max-width: 30px; /* Adjust the width as needed */
-  max-height: 30px; /* Adjust the height as needed */
+  max-width: 30px;
+  /* Adjust the width as needed */
+  max-height: 30px;
+  /* Adjust the height as needed */
 }

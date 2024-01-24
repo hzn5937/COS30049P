@@ -20,7 +20,7 @@
 
         <h1>Top Games</h1>
         <div class="section-title">
-            <h4>Trending Now</h4>
+            <h2>Trending Now</h2>
                                 </div>
     
 </div>
@@ -102,9 +102,6 @@
   </div>
   </div>
 </div>
-
-
-
 
         <?php
             include "../components/footer.inc";
