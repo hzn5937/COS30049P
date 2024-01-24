@@ -37,6 +37,10 @@ body {
     margin-right: 10px;
 }
 
+#totalCoin{
+    padding-left: 12%;
+}
+
 /* Logo Styling */
 .logo {
     width: 150px;
@@ -71,6 +75,7 @@ nav .button {
     padding: 10px 30px;
     border-radius: 20px;
 }
+
 nav li :hover {
     color: indianred;
 }
@@ -78,6 +83,40 @@ nav li :hover {
 nav li .active {
     color: indianred;
     font-weight: bolder;
+}
+
+.searchBox {
+    display: inline;
+    align-items: left;
+}   
+
+.searchBox form {
+    position: relative;
+}
+
+.searchBox input[type="text"] {
+    border-radius: 25px;
+    width: 200px;
+    height: 32px;
+    padding: 0 32px 0 10px;
+    border-style: hidden;
+}
+
+.searchBox button {
+    border-radius: 25px;
+    margin: 0;
+    height: 32px;
+    background: #fff;
+    border-style: hidden;
+}
+
+.searchBox button:hover {
+    background: #f2f2f2;
+}
+
+.searchBox button i {
+    font-size: 17px;
+    color: #999;
 }
 
 /* Webpage Footer Styling */
@@ -138,6 +177,6 @@ nav li .active {
 
 .hr-footer {
     border: 1px solid grey;
-    width:35%;
+    width: 35%;
     margin-top: 15px;
 }
