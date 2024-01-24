@@ -8,13 +8,10 @@ h1{
     color:red;
 }
 
-div.gallery {
-    border: 10px solid red;
-  }
-  
-  div.gallery:hover {
-    border: 10px solid red;
-  }
+
+.window{
+  border: 5px solid red;
+}
   
   div.gallery img {
     width: 100%;
@@ -34,14 +31,24 @@ div.gallery {
     margin-top: 10px;
     padding: 0 10px;
     float: left;
-    width: 33.3333333%;
+    width: 33%;
   }
+
+  .cashless {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border: 15px;
+    color:white;
+    border-color: #ffffff;
+    
+    }
   .responsive2 {
     margin-top: 10%;
     margin-bottom: 15%;
     padding: 0 10px;
     float: left;
-    width: 33.3333333%;
+    width: 33%;
   }
   
   @media only screen and (max-width: 700px) {
@@ -63,42 +70,9 @@ div.gallery {
     clear: both;
   }
 
-  h4{
-    margin: 100px 0px;
-    margin-right: 50%;
-    margin-bottom: 110%;
-    color: white;
-    text-decoration:dotted;
-  }
-
-.section-title h4:after{
-	position: absolute;
-	left: 0;
-	top: -6px;
-	height: 32px;
-	width: 4px;
-	background: #e53637;
-	content: "";
-}
 .section-title {
 	width: 200px;
     min-height: 25px;
-}
-.button2 {
-   display: inline-block;
-   padding: 10px 20px;
-   background-color: red;
-   margin-left: 130px;
-   text-decoration: none;
-   text-align: center;
-   border-radius: 10px;
-   color: #ffffff;
-   font-size: 18px;
-   padding: 20px;
-   transition: all 0.5s;
-   cursor: pointer;
-   width: 100px;
-   margin-top: 5%;
 }
 
 .button2 span {
@@ -117,11 +91,33 @@ div.gallery {
   transition: 0.5s;
 }
 
+
 .button2:hover span {
   padding-right: 2px;
 }
+.button2:hover {
+  background-color: #0056b3; /* Change color on hover if needed */
+}
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+/* Style the button */
+.button2 {
+display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 5%;
+  position:relative;
+  cursor: pointer;
+}
+.coin-image {
+  max-width: 30px; /* Adjust the width as needed */
+  max-height: 30px; /* Adjust the height as needed */
 }

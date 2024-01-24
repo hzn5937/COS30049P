@@ -22,33 +22,45 @@
         <div class="section-title">
             <h4>Trending Now</h4>
                                 </div>
-    <div class="responsive">
+    
+</div>
+<div class="responsive">
     <div class="gallery">
     <a target="_blank" href="../images/fifa_small.jpg">
-      <img src="../images/fifa_small.jpg" alt="Cinque Terre" width="100" height="100">
+      <img src="../images/fifa_small.jpg"  class="window" width="100" height="100">
     </a>
-    <div class="button-list">
+     <!-- Your cashless with button2 and price -->
+  <div class="cashless">
+    <span><img src="../images/coin.png" alt="Your Coin" class="coin-image"> 20</span>
     <a target="_blank" href="https://www.ea.com/games/fifa/fifa-23" class="button2">Explore</a>
+  </div>
     </div>
   </div>
-</div>
 
 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="../images/gta_small.jpg">
-      <img src="../images/gta_small.jpg" alt="Forest" width="100" height="100">
-      <a target="_blank" href="https://www.rockstargames.com/gta-v" class="button2">Explore</a>
+      <img src="../images/gta_small.jpg"  width="100" class="window" height="100">
     </a>
+    <div class="cashless">
+    <span><img src="../images/coin.png" alt="Your Coin" class="coin-image"> 25</span>
+    <a target="_blank" href="https://www.rockstargames.com/gta-v" class="button2">Explore</a>
+  </div>
+
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="../images/mine_small.jpg">
-      <img src="../images/mine_small.jpg" alt="Northern Lights" width="600" height="400">
-      <a target="_blank" href="https://www.minecraft.net/en-us" class="button2">Explore</a>
+      <img src="../images/mine_small.jpg"  width="600" class="window" height="400">
+      
     </a>
+    <div class="cashless">
+    <span><img src="../images/coin.png" alt="Your Coin" class="coin-image">30</span>
+    <a target="_blank" href="https://www.minecraft.net/en-us" class="button2">Explore</a>
+  </div>
   </div>
 </div>
 <div class="clearfix"></div>  
@@ -56,9 +68,12 @@
 <div class="responsive2">
   <div class="gallery">
     <a target="_blank" href="../images/red_small.jpg">
-      <img src="../images/red_small.jpg" alt="Mountains" width="600" height="400">
-      <a target="_blank" href="https://www.rockstargames.com/reddeadredemption2" class="button2">Explore</a>
+      <img src="../images/red_small.jpg"  width="600" class="window" height="400">
     </a>
+    <div class="cashless">
+    <span><img src="../images/coin.png" alt="Your Coin" class="coin-image"> 25</span>
+    <a target="_blank" href="https://www.rockstargames.com/reddeadredemption2" class="button2">Explore</a>
+  </div>
   </div>
 </div>
 
@@ -66,9 +81,12 @@
 <div class="responsive2">
   <div class="gallery">
     <a target="_blank" href="../images/spider_small.jpg">
-      <img src="../images/spider_small.jpg" alt="Cinque Terre" width="100" height="100">
-      <a target="_blank" href="https://www.gamingbible.com/news/platform/pc/marvels-spiderman-2-quietly-lands-on-pc-514583-20240117" class="button2">Explore</a>
+      <img src="../images/spider_small.jpg"  width="100" class="window" height="100">
     </a>
+    <div class="cashless">
+    <span><img src="../images/coin.png" alt="Your Coin" class="coin-image"> 28</span>
+    <a target="_blank" href="https://www.gamingbible.com/news/platform/pc/marvels-spiderman-2-quietly-lands-on-pc-514583-20240117" class="button2">Explore</a>
+  </div>
 </div>
 </div>
 
@@ -76,22 +94,18 @@
 <div class="responsive2">
   <div class="gallery">
     <a target="_blank" href="../images/ring_small.jpg">
-      <img src="../images/ring_small.jpg" alt="Forest" width="100" height="100">
-      <a target="_blank" href="https://store.steampowered.com/app/1245620/ELDEN_RING/" class="button2">Explore</a>
+      <img src="../images/ring_small.jpg"  width="100" class="window" height="100">
     </a>
+    <div class="cashless">
+    <span><img src="../images/coin.png" alt="Your Coin" class="coin-image"> 30</span>
+    <a target="_blank" href="https://store.steampowered.com/app/1245620/ELDEN_RING/" class="button2">Explore</a>
+  </div>
   </div>
 </div>
-<div class="clearfix2"></div>
-
-
-
-        
 
 
 
 
-
-  
         <?php
             include "../components/footer.inc";
         ?>
