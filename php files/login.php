@@ -13,6 +13,24 @@
 
 </head>
 <body>
+    <?php
+        $validateUsername = "admin";
+        $validatePassword = "admin";
+
+        if (isset($_POST['username']) && isset($_POST['password'])) {
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+
+            if ($username == $validateUsername && $password == $validatePassword) {
+                session_start();
+                $_SESSION['username'] = $username;
+                header("Location: homepage.php");
+            } else {
+                echo "<script>alert('Invalid username or password!')</script>";
+            }
+        }
+    ?>
+
     <div class="wrapper">
         <span class="icon-close">
             <ion-icon name="close" class="closebtn"></ion-icon>  
@@ -20,15 +38,15 @@
 
         <div class="form-box login">
             <h2>Login</h2>
-            <form action="#">
+            <form action="login.php" method="post">
                 <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="username" id="username" required>
+                    <label>Username</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input type="password" name="password" id="password" required>
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
