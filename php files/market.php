@@ -33,7 +33,7 @@
         <!-- Your cashless with button2 and price -->
         <div class="cashless">
           <span>20</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@
         </a>
         <div class="cashless">
           <span>25</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Buy</a>
         </div>
 
       </div>
@@ -60,7 +60,7 @@
         </a>
         <div class="cashless">
           <span>30</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
         </a>
         <div class="cashless">
           <span> 25</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>
@@ -86,7 +86,7 @@
         </a>
         <div class="cashless">
           <span>28</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@
         </a>
         <div class="cashless">
           <span>30</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>
