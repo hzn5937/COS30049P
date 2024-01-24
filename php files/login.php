@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <span class="icon-close">
-            <ion-icon name="close"></ion-icon>  
+            <ion-icon name="close" class="closebtn"></ion-icon>  
         </span>
 
         <div class="form-box login">
