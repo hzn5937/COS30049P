@@ -55,7 +55,7 @@
                                     <img src="../images/fifa_small.jpg">
                                     <div>
                                         <p>Fifa 23</p>
-                                        <small></small>
+                                        <small>Standard Edition</small>
                                     </div>
                                 </div>
                             </td>
@@ -73,7 +73,7 @@
                                     <img src="../images/gta_small.jpg">
                                     <div>
                                         <p>Grand Thief Auto V</p>
-                                        <small></small>
+                                        <small>Premium Edition</small>
                                     </div>
                                 </div>
                             </td>
