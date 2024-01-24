@@ -1,4 +1,4 @@
-const coinCost = 40;
+const coinCost = 10;
 var coinCount = 0;
 var totalCost = 0;
 const decimal = /^\d*\.?\d+$/;

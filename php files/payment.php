@@ -44,8 +44,8 @@
                             <td><input type="number" value="1"></td>
                             <td>
                                 <div class="price-info">
-                                    <img src="../images/coin.png">
                                     <p>30</p>
+                                    <img src="../images/coin.png">
                                 </div>
                             </td>
                         </tr>
@@ -62,8 +62,8 @@
                             <td><input type="number" value="1"></td>
                             <td>
                                 <div class="price-info">
-                                    <img src="../images/coin.png">
                                     <p>30</p>
+                                    <img src="../images/coin.png">
                                 </div>
                             </td>
                         </tr>
@@ -80,8 +80,8 @@
                             <td><input type="number" value="1"></td>
                             <td>
                                 <div class="price-info">
-                                    <img src="../images/coin.png">
                                     <p>30</p>
+                                    <img src="../images/coin.png">
                                 </div>
                             </td>
                         </tr>
@@ -95,8 +95,8 @@
                         <td>Subtotal</td>
                         <td>
                             <div class="price-info">
-                                <img src="../images/coin.png">
                                 <p>90</p>
+                                <img src="../images/coin.png">
                             </div>
                         </td>
                     </tr>
@@ -104,8 +104,8 @@
                         <td>Discount</td>
                         <td>
                             <div class="price-info">
-                                <img src="../images/coin.png">
                                 <p>0</p>
+                                <img src="../images/coin.png">
                             </div>
                         </td>
                     </tr>
@@ -118,8 +118,8 @@
                         <td>Total</td>
                         <td>
                             <div class="total-price-info">
-                                <img src="../images/coin.png">
                                 <p>90</p>
+                                <img src="../images/coin.png">
                             </div>
                         </td>
                     </tr>

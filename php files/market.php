@@ -33,7 +33,7 @@
         <!-- Your cashless with button2 and price -->
         <div class="cashless">
           <span>20</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="https://www.ea.com/games/fifa/fifa-23" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Explore</a>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@
         </a>
         <div class="cashless">
           <span>25</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="https://www.rockstargames.com/gta-v" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Explore</a>
         </div>
 
       </div>
@@ -60,7 +60,7 @@
         </a>
         <div class="cashless">
           <span>30</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="https://www.minecraft.net/en-us" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Explore</a>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
         </a>
         <div class="cashless">
           <span> 25</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="https://www.rockstargames.com/reddeadredemption2" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Explore</a>
         </div>
       </div>
     </div>
@@ -86,9 +86,7 @@
         </a>
         <div class="cashless">
           <span>28</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank"
-            href="https://www.gamingbible.com/news/platform/pc/marvels-spiderman-2-quietly-lands-on-pc-514583-20240117"
-            class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Explore</a>
         </div>
       </div>
     </div>
@@ -101,7 +99,7 @@
         </a>
         <div class="cashless">
           <span>30</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="https://store.steampowered.com/app/1245620/ELDEN_RING/" class="button2">Explore</a>
+          <a target="_blank" href="payment.php" class="button2">Explore</a>
         </div>
       </div>
     </div>
