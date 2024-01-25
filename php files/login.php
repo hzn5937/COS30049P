@@ -21,8 +21,9 @@
             $username = $_POST['username'];
             $password = $_POST['password'];
 
-            if ($username == $validateUsername && $password == $validatePassword) {
+            if ($username === $validateUsername && $password === $validatePassword) {
                 session_start();
+                $_SESSION['user_id'] = 1; //will be change later according to user id in database
                 $_SESSION['username'] = $username;
                 header("Location: homepage.php");
             } else {

@@ -17,7 +17,7 @@
 
     <span id="totalCoin">0</span><img src="../images/coin.png" class="coinIcon">
 
-    <a href="login.php" class="button active">Log In / Sign Up</a>
+    <a href="login.php" class="button" id="loginBtn">Log In / Sign Up</a>
 
-    <a href="profile.php" class="profileButton"><i class="fas fa-user-alt"></i></a>
+    <a href="profile.php" class="profileButton" id="profileBtn"><i class="fas fa-user-alt"></i></a>
 </nav>

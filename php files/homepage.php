@@ -12,15 +12,18 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../script/slide.js"></script>
+    
 </head>
 
 <body>
     <div class="container">
 
+
         <?php
-            include "../components/header.inc";
+            session_start();
+            include "../components/header.inc"; 
         ?>
+        
 
         <div class="main_content">
             <h1>Welcome To <span>GameDex Store</span></h1>
@@ -114,6 +117,25 @@
 
     </div>
 
+    <script src="../script/slide.js"></script>
+    <script src="../script/status.js"></script>
+
+    <?php
+        if(isset($_SESSION["username"]))
+        {
+            echo "<script>
+                document.getElementById('loginBtn').classList.remove('active');
+                document.getElementById('profileBtn').classList.add('active');
+            </script>";
+        }
+        else 
+        {
+            echo "<script>
+                document.getElementById('loginBtn').classList.add('active');
+                document.getElementById('profileBtn').classList.remove('active');
+            </script>";
+        }
+    ?>
 </body>
 
 </html>

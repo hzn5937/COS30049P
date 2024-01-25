@@ -17,7 +17,7 @@
 <body>
   <div class="container">
     <?php
-    include "../components/header.inc";
+      include "../components/header.inc";
     ?>
 
     <h1>Top Games</h1>
@@ -106,7 +106,7 @@
     </div>
 
     <?php
-    include "../components/footer.inc";
+      include "../components/footer.inc";
     ?>
   </div>
 

@@ -14,6 +14,22 @@
 
 </head>
 <body>
-    
+    <?php
+        include "../components/header.inc";
+    ?>
+    <button class="button" id="signoutBtn">Signout</button>
+    <script>
+        signoutBtn = document.getElementById("signoutBtn");
+        signoutBtn.onclick = function() {
+            <?php
+                session_start();
+                session_destroy();
+            ?>
+            window.location.href = "homepage.php";
+        }
+    </script>
+    <?php
+        include "../components/footer.inc";
+    ?>
 </body>
 </html>
