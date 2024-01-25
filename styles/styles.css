@@ -14,6 +14,22 @@ html {
     min-height: 100vh;
 }
 
+nav .button {
+    display: none;
+}
+
+nav .profileButton {
+    display: none;
+}
+
+nav .button.active {
+    display: inline;
+}
+
+nav .profileButton.active {
+    display: inline;
+}
+
 body {
     padding: 0;
     margin: 0;

@@ -15,6 +15,7 @@
 <body>
     <div class="container">
         <?php
+            session_start();
             include "../components/header.inc";
         ?>
         
@@ -31,6 +32,7 @@
         
         <?php
             include "../components/footer.inc";
+            include "../components/button_switch.php";
         ?>
     </div>
 </body>

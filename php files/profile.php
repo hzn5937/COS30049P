@@ -15,21 +15,28 @@
 </head>
 <body>
     <?php
+        session_start();
         include "../components/header.inc";
     ?>
     <button class="button" id="signoutBtn">Signout</button>
     <script>
-        signoutBtn = document.getElementById("signoutBtn");
+        var signoutBtn = document.getElementById("signoutBtn");
         signoutBtn.onclick = function() {
-            <?php
-                session_start();
-                session_destroy();
-            ?>
-            window.location.href = "homepage.php";
+            // Use AJAX to call a server-side script to destroy the session
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Redirect to homepage after destroying the session
+                    window.location.href = "homepage.php";
+                }
+            };
+            xhr.open("GET", "logout.php", true);
+            xhr.send();
         }
     </script>
     <?php
         include "../components/footer.inc";
+        include "../components/button_switch.php";
     ?>
 </body>
 </html>
