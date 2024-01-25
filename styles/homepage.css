@@ -6,22 +6,6 @@ last modified: 14/1/2024
 description: CSS file for homepage.php
 */
 
-nav .button {
-    display: none;
-}
-
-nav .profileButton {
-    display: none;
-}
-
-nav .button.active {
-    display: inline;
-}
-
-nav .profileButton.active {
-    display: inline;
-}
-
 .main_content {
     margin-top: 3%;
 }
