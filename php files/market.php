@@ -29,13 +29,13 @@
 
     <div class="responsive">
       <div class="gallery">
-        <a target="_blank" href="../images/fifa_small.jpg">
+        <a href="../images/fifa_small.jpg">
           <img src="../images/fifa_small.jpg" class="window" width="100" height="100">
         </a>
         <!-- Your cashless with button2 and price -->
         <div class="cashless">
           <span>20</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Buy</a>
+          <a href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>
@@ -43,12 +43,12 @@
 
     <div class="responsive">
       <div class="gallery">
-        <a target="_blank" href="../images/gta_small.jpg">
+        <a href="../images/gta_small.jpg">
           <img src="../images/gta_small.jpg" width="100" class="window" height="100">
         </a>
         <div class="cashless">
           <span>25</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Buy</a>
+          <a href="payment.php" class="button2">Buy</a>
         </div>
 
       </div>
@@ -56,13 +56,13 @@
 
     <div class="responsive">
       <div class="gallery">
-        <a target="_blank" href="../images/mine_small.jpg">
+        <a href="../images/mine_small.jpg">
           <img src="../images/mine_small.jpg" width="600" class="window" height="400">
 
         </a>
         <div class="cashless">
           <span>30</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Buy</a>
+          <a href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>
@@ -70,12 +70,12 @@
 
     <div class="responsive2">
       <div class="gallery">
-        <a target="_blank" href="../images/red_small.jpg">
+        <a href="../images/red_small.jpg">
           <img src="../images/red_small.jpg" width="600" class="window" height="400">
         </a>
         <div class="cashless">
           <span> 25</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Buy</a>
+          <a href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>
@@ -83,12 +83,12 @@
 
     <div class="responsive2">
       <div class="gallery">
-        <a target="_blank" href="../images/spider_small.jpg">
+        <a href="../images/spider_small.jpg">
           <img src="../images/spider_small.jpg" width="100" class="window" height="100">
         </a>
         <div class="cashless">
           <span>28</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Buy</a>
+          <a href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>
@@ -96,12 +96,12 @@
 
     <div class="responsive2">
       <div class="gallery">
-        <a target="_blank" href="../images/ring_small.jpg">
+        <a href="../images/ring_small.jpg">
           <img src="../images/ring_small.jpg" width="100" class="window" height="100">
         </a>
         <div class="cashless">
           <span>30</span><img src="../images/coin.png" alt="Your Coin" class="coin-image">
-          <a target="_blank" href="payment.php" class="button2">Buy</a>
+          <a href="payment.php" class="button2">Buy</a>
         </div>
       </div>
     </div>

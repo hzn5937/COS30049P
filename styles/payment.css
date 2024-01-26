@@ -12,7 +12,10 @@
     width: 100%;
     border-bottom: 1px solid;
     border-color: gray;
-    
+}
+
+.quantityBox, .fa-plus, .fa-minus {
+    margin-right: 10px;
 }
 
 .price-info {

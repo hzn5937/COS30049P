@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="../script/quantity.js"></script>
 </head>
 <body>
     <div class="container">
@@ -43,7 +43,7 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input type="number" value="1"></td>
+                            <td><input class="quantityBox" type="number" value="1"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></td>
                             <td>
                                 <div class="price-info">
                                     <p>30</p>
@@ -61,7 +61,7 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input type="number" value="1"></td>
+                            <td><input class="quantityBox" type="number" value="1"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></td>
                             <td>
                                 <div class="price-info">
                                     <p>30</p>
@@ -79,7 +79,7 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input type="number" value="1"></td>
+                            <td><input class="quantityBox" type="number" value="1"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></td>
                             <td>
                                 <div class="price-info">
                                     <p>30</p>
