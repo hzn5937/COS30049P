@@ -43,10 +43,10 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input class="quantityBox" type="number" value="1"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></td>
+                            <td><input class="quantityBox" id="quantityBox1" type="number" value="1"><i class="fa fa-plus" id="plus1"></i><i class="fa fa-minus" id="minus1"></i></td>
                             <td>
                                 <div class="price-info">
-                                    <p>30</p>
+                                    <p id="price1">30</p>
                                     <img src="../images/coin.png">
                                 </div>
                             </td>
@@ -61,10 +61,10 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input class="quantityBox" type="number" value="1"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></td>
+                            <td><input class="quantityBox" id="quantityBox2" type="number" value="1"><i class="fa fa-plus" id="plus2"></i><i class="fa fa-minus" id="minus2"></i></td>
                             <td>
                                 <div class="price-info">
-                                    <p>30</p>
+                                    <p id="price2">30</p>
                                     <img src="../images/coin.png">
                                 </div>
                             </td>
@@ -79,10 +79,10 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input class="quantityBox" type="number" value="1"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></td>
+                            <td><input class="quantityBox" id="quantityBox3" type="number" value="1"><i class="fa fa-plus" id="plus3"></i><i class="fa fa-minus" id="minus3"></i></td>
                             <td>
                                 <div class="price-info">
-                                    <p>30</p>
+                                    <p id="price3">30</p>
                                     <img src="../images/coin.png">
                                 </div>
                             </td>
@@ -97,7 +97,7 @@
                         <td>Subtotal</td>
                         <td>
                             <div class="price-info">
-                                <p>90</p>
+                                <p id="subTotalPrice">90</p>
                                 <img src="../images/coin.png">
                             </div>
                         </td>
@@ -106,7 +106,7 @@
                         <td>Discount</td>
                         <td>
                             <div class="price-info">
-                                <p>0</p>
+                                <p id="discount">0</p>
                                 <img src="../images/coin.png">
                             </div>
                         </td>
@@ -120,7 +120,7 @@
                         <td>Total</td>
                         <td>
                             <div class="total-price-info">
-                                <p>90</p>
+                                <p id="totalPrice">90</p>
                                 <img src="../images/coin.png">
                             </div>
                         </td>
