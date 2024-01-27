@@ -58,12 +58,12 @@
                 </div>
             </div>
 
-        </div>    
-    <?php
+        </div>
+        <?php
         include "../components/footer.inc";
         include "../components/button_switch.php";
-    ?>
-    <script src="../script/logout.js"></script>
+        ?>
+        <script src="../script/logout.js"></script>
 </body>
 
 </html>

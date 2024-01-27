@@ -17,8 +17,8 @@
 <body>
     <div class="container">
         <?php
-            session_start();
-            include "../components/header.inc";
+        session_start();
+        include "../components/header.inc";
         ?>
 
         <div class="content">
@@ -86,8 +86,8 @@
         </div>
 
         <?php
-            include "../components/footer.inc";
-            include "../components/button_switch.php";
+        include "../components/footer.inc";
+        include "../components/button_switch.php";
         ?>
     </div>
 </body>

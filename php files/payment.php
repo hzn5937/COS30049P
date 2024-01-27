@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,20 +14,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../script/quantity.js"></script>
 </head>
+
 <body>
     <div class="container">
         <?php
-            session_start();
-            include "../components/header.inc";
+        session_start();
+        include "../components/header.inc";
         ?>
-        
+
         <div class="shopping-container">
             <fieldset class="cart-table">
                 <legend>
                     <h1>Shopping Cart</h1>
                 </legend>
-                
-                <div class="shopping-cart"> 
+
+                <div class="shopping-cart">
                     <table>
                         <tr>
                             <th>Product</th>
@@ -43,7 +45,8 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input class="quantityBox" id="quantityBox1" type="number" value="1"><i class="fa fa-plus" id="plus1"></i><i class="fa fa-minus" id="minus1"></i></td>
+                            <td><input class="quantityBox" id="quantityBox1" type="number" value="1"><i
+                                    class="fa fa-plus" id="plus1"></i><i class="fa fa-minus" id="minus1"></i></td>
                             <td>
                                 <div class="price-info">
                                     <p id="price1">30</p>
@@ -61,7 +64,8 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input class="quantityBox" id="quantityBox2" type="number" value="1"><i class="fa fa-plus" id="plus2"></i><i class="fa fa-minus" id="minus2"></i></td>
+                            <td><input class="quantityBox" id="quantityBox2" type="number" value="1"><i
+                                    class="fa fa-plus" id="plus2"></i><i class="fa fa-minus" id="minus2"></i></td>
                             <td>
                                 <div class="price-info">
                                     <p id="price2">30</p>
@@ -79,7 +83,8 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input class="quantityBox" id="quantityBox3" type="number" value="1"><i class="fa fa-plus" id="plus3"></i><i class="fa fa-minus" id="minus3"></i></td>
+                            <td><input class="quantityBox" id="quantityBox3" type="number" value="1"><i
+                                    class="fa fa-plus" id="plus3"></i><i class="fa fa-minus" id="minus3"></i></td>
                             <td>
                                 <div class="price-info">
                                     <p id="price3">30</p>
@@ -131,9 +136,10 @@
         </div>
 
         <?php
-            include "../components/footer.inc";
-            include "../components/button_switch.php";
+        include "../components/footer.inc";
+        include "../components/button_switch.php";
         ?>
     </div>
 </body>
+
 </html>
