@@ -58,8 +58,7 @@
                 </div>
             </div>
 
-        </div>
-            
+        </div>    
     <?php
         include "../components/footer.inc";
         include "../components/button_switch.php";
