@@ -64,6 +64,7 @@
         include "../components/button_switch.php";
         ?>
         <script src="../script/logout.js"></script>
+        <script src="../script/script.js"></script>
 </body>
 
 </html>

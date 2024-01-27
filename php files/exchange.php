@@ -31,7 +31,6 @@
             <input type="text" id="exchange" name="exchange" value="" placeholder="$" oninput="totalCostCheck();">
             <button id="btn" onclick="checkValue();">Pay</button><br>
             <p id="totalCost">Total cost: </p>
-            <script src="../script/exchange.js"></script>
         </div>
         
         <?php
@@ -39,5 +38,7 @@
             include "../components/button_switch.php";
         ?>
     </div>
+    <script src="../script/script.js"></script>
+    <script src="../script/exchange.js"></script>
 </body>
 </html>

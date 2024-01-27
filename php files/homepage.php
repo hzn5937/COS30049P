@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../script/slide.js"></script>    
 </head>
 
 <body>
@@ -116,6 +115,8 @@
             include "../components/button_switch.php";
         ?>
     </div>  
+    <script src="../script/slide.js"></script>    
+    <script src="../script/script.js"></script>
 </body>
 
 </html>

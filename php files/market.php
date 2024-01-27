@@ -17,8 +17,8 @@
 <body>
   <div class="container">
     <?php
-    session_start();
-    include "../components/header.inc";
+      session_start();
+      include "../components/header.inc";
     ?>
 
     <h1>Top Games</h1>
@@ -107,10 +107,12 @@
     </div>
 
     <?php
-    include "../components/footer.inc";
-    include "../components/button_switch.php";
+      include "../components/footer.inc";
+      include "../components/button_switch.php";
     ?>
   </div>
+  <script src="../script/script.js"></script>
+
 
 </body>
 

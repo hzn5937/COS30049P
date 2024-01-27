@@ -86,10 +86,12 @@
         </div>
 
         <?php
-        include "../components/footer.inc";
-        include "../components/button_switch.php";
+            include "../components/footer.inc";
+            include "../components/button_switch.php";
         ?>
     </div>
+
+    <script src="../script/script.js"></script>
 </body>
 
 </html>

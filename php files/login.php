@@ -25,6 +25,14 @@
                 session_start();
                 $_SESSION['user_id'] = 1; //will be change later according to user id in database
                 $_SESSION['username'] = $username;
+                if (isset($_POST["remember"]))
+                {
+                    $_SESSION["remember"] = true;
+                }
+                else
+                {
+                    $_SESSION["remember"] = false;
+                }
                 header("Location: homepage.php");
             } else {
                 echo "<script>alert('Invalid username or password!')</script>";
@@ -51,7 +59,7 @@
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
+                    <label><input type="checkbox" name="remember" id="remember">Remember me</label>
                     <a href="#">Forgot Password</a>
                 </div>
                 <button type="submit" class="btn">Login</button>
@@ -100,5 +108,6 @@
     <script src="../script/login.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 </html>
