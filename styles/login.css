@@ -7,13 +7,14 @@
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
 .wrapper {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 400px;
     height: 440px;
     background: rgb(207, 200, 200);
@@ -25,6 +26,7 @@ body {
     justify-content: center;    
     align-items: center;
     overflow: hidden;
+    margin: auto;
      /*transform: scale(0); */
     transition: tranform .5s ease, height .2s ease;
 }
@@ -183,4 +185,18 @@ body {
 
 .login-register p a:hover {
     text-decoration: underline;
+}
+
+aside {
+    color: indianred;
+    background-color: rgb(207, 200, 200);
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: auto;
+    order: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(75%) translateY(-50%); 
 }
