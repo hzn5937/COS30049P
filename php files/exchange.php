@@ -17,6 +17,10 @@
         <?php
             session_start();
             include "../components/header.inc";
+            if (!isset($_SESSION["username"]))
+            {
+                header("Location: login.php");
+            }
         ?>
         
         <div class="main_content">
