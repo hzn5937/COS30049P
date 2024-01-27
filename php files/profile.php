@@ -16,69 +16,71 @@
 </head>
 
 <body>
-    <?php
-    session_start();
-    include "../components/header.inc";
-    ?>
+    <div class="container">
+        <?php
+        session_start();
+        include "../components/header.inc";
+        ?>
 
-    <div class="card">
-        <div class="left-container">
-            <img src="../images/hbach.jpg" alt="profile image">
-            <h2>Ha Bach</h2>
-        </div>
-
-        <div class="right-container">
-            <h3>Profile Details</h3>
-            <table>
-                <tr>
-                    <td>Name :</td>
-                    <td>Ha Bach</td>
-                </tr>
-                <tr>
-                    <td>Age :</td>
-                    <td>69</td>
-                </tr>
-                <tr>
-                    <td>Number :</td>
-                    <td>0936071506</td>
-                </tr>
-                <tr>
-                    <td>Email :</td>
-                    <td>habach05032003@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>Address :</td>
-                    <td>12345, Duy Tan, Ha Noi, Viet Nam </td>
-                </tr>
-            </table>
-
-            <div class="button">
-                <button class="button1" id="signoutBtn">Signout</button>
-                <button class="button2">Edit</button>
+        <div class="card">
+            <div class="left-container">
+                <img src="../images/hbach.jpg" alt="profile image">
+                <h2>Ha Bach</h2>
             </div>
-        </div>
-        
-    </div>
-    <script>
-        var signoutBtn = document.getElementById("signoutBtn");
-        signoutBtn.onclick = function () {
-            // Use AJAX to call a server-side script to destroy the session
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    // Redirect to homepage after destroying the session
-                    window.location.href = "homepage.php";
-                }
-            };
-            xhr.open("GET", "logout.php", true);
-            xhr.send();
-        }
-    </script>
 
-    <?php
-    include "../components/footer.inc";
-    include "../components/button_switch.php";
-    ?>
+            <div class="right-container">
+                <h3>Profile Details</h3>
+                <table>
+                    <tr>
+                        <td>Name :</td>
+                        <td>Ha Bach</td>
+                    </tr>
+                    <tr>
+                        <td>Age :</td>
+                        <td>69</td>
+                    </tr>
+                    <tr>
+                        <td>Number :</td>
+                        <td>0936071506</td>
+                    </tr>
+                    <tr>
+                        <td>Email :</td>
+                        <td>habach05032003@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Address :</td>
+                        <td>12345, Duy Tan, Ha Noi, Viet Nam </td>
+                    </tr>
+                </table>
+
+                <div class="button">
+                    <button class="button1" id="signoutBtn">Signout</button>
+                    <button class="button2">Edit</button>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            var signoutBtn = document.getElementById("signoutBtn");
+            signoutBtn.onclick = function () {
+                // Use AJAX to call a server-side script to destroy the session
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        // Redirect to homepage after destroying the session
+                        window.location.href = "homepage.php";
+                    }
+                };
+                xhr.open("GET", "logout.php", true);
+                xhr.send();
+            }
+        </script>
+
+        <?php
+        include "../components/footer.inc";
+        include "../components/button_switch.php";
+        ?>
+    </div>
 </body>
 
 </html>
