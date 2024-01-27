@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    width: 70%;
+    height: 480px;
+}
+
+.left-container {
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 430px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.right-container {
+    background-color: rgba(123, 121, 121, 0.762);
+    flex: 1;
+    max-width: 70%;
+    height: 430px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right-container .button {
+    text-align: center;
+}
+
+.right-container .button1 {
+    text-align: center;
+    background-color: indianred;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.right-container .button2 {
+    text-align: center;
+    background-color: indianred;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.left-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: indianred;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: indianred;
+}
