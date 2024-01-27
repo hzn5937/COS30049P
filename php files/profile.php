@@ -22,7 +22,7 @@
         include "../components/header.inc";
         ?>
 
-        <div class="card">
+        <div>
             <div class="left-container">
                 <img src="../images/hbach.jpg" alt="profile image">
                 <h2>Ha Bach</h2>
