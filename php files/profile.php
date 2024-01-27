@@ -33,23 +33,23 @@
                 <table>
                     <tr>
                         <td>Name :</td>
-                        <td>Ha Bach</td>
+                        <td contenteditable='true'>Ha Bach</td>
                     </tr>
                     <tr>
                         <td>Age :</td>
-                        <td>69</td>
+                        <td contenteditable='true'>69</td>
                     </tr>
                     <tr>
                         <td>Number :</td>
-                        <td>0936071506</td>
+                        <td contenteditable='true'>0936071506</td>
                     </tr>
                     <tr>
                         <td>Email :</td>
-                        <td>habach05032003@gmail.com</td>
+                        <td contenteditable='true'>habach05032003@gmail.com</td>
                     </tr>
                     <tr>
                         <td>Address :</td>
-                        <td>12345, Duy Tan, Ha Noi, Viet Nam </td>
+                        <td contenteditable='true'>12345, Duy Tan, Ha Noi, Viet Nam </td>
                     </tr>
                 </table>
 
