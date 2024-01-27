@@ -58,11 +58,7 @@
                 </div>
             </div>
 
-        </div>
-        
-
-    <button class="button" id="signoutBtn">Signout</button>
-    
+        </div>    
     <?php
         include "../components/footer.inc";
         include "../components/button_switch.php";
