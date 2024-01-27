@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -60,27 +59,15 @@
             </div>
 
         </div>
-        <script>
-            var signoutBtn = document.getElementById("signoutBtn");
-            signoutBtn.onclick = function () {
-                // Use AJAX to call a server-side script to destroy the session
-                var xhr = new XMLHttpRequest();
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4 && xhr.status == 200) {
-                        // Redirect to homepage after destroying the session
-                        window.location.href = "homepage.php";
-                    }
-                };
-                xhr.open("GET", "logout.php", true);
-                xhr.send();
-            }
-        </script>
+        
 
-        <?php
+    <button class="button" id="signoutBtn">Signout</button>
+    
+    <?php
         include "../components/footer.inc";
         include "../components/button_switch.php";
-        ?>
-    </div>
+    ?>
+    <script src="../script/logout.js"></script>
 </body>
 
 </html>
