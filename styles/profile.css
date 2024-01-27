@@ -3,17 +3,6 @@ body {
     padding: 20px;
 }
 
-.card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 30px;
-    padding: 10px;
-    width: 70%;
-    height: 480px;
-}
-
 .left-container {
     flex: 1;
     max-width: 30%;
