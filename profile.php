@@ -59,9 +59,10 @@
             </div>
 
         </div>
+    </div>
         <?php
-        include "components/footer.inc";
-        include "php/button_switch.php";
+            include "components/footer.inc";
+            include "php/button_switch.php";
         ?>
         <script src="script/logout.js"></script>
         <script src="script/script.js"></script>

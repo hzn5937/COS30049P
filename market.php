@@ -30,7 +30,7 @@
     <div class="responsive">
       <div class="gallery">
         <a href="images/fifa_small.jpg">
-          <img src="images/fifa_small.jpg" class="window" width="100" height="100">
+          <img src="images/fifa_small.jpg" alt="fifa23" class="window" width="100" height="100">
         </a>
         <!-- Your cashless with button2 and price -->
         <div class="cashless">
@@ -44,7 +44,7 @@
     <div class="responsive">
       <div class="gallery">
         <a href="images/gta_small.jpg">
-          <img src="images/gta_small.jpg" width="100" class="window" height="100">
+          <img src="images/gta_small.jpg" alt="GTA IV" width="100" class="window" height="100">
         </a>
         <div class="cashless">
           <span>25</span><img src="images/coin.png" alt="Your Coin" class="coin-image">
@@ -57,7 +57,7 @@
     <div class="responsive">
       <div class="gallery">
         <a href="images/mine_small.jpg">
-          <img src="images/mine_small.jpg" width="600" class="window" height="400">
+          <img src="images/mine_small.jpg" alt="Minecraft" width="600" class="window" height="400">
 
         </a>
         <div class="cashless">
@@ -71,7 +71,7 @@
     <div class="responsive2">
       <div class="gallery">
         <a href="images/red_small.jpg">
-          <img src="images/red_small.jpg" width="600" class="window" height="400">
+          <img src="images/red_small.jpg" alt="Red Dead Redemption 2" width="600" class="window" height="400">
         </a>
         <div class="cashless">
           <span> 25</span><img src="images/coin.png" alt="Your Coin" class="coin-image">
@@ -84,7 +84,7 @@
     <div class="responsive2">
       <div class="gallery">
         <a href="images/spider_small.jpg">
-          <img src="images/spider_small.jpg" width="100" class="window" height="100">
+          <img src="images/spider_small.jpg" alt="Spider Man 2" width="100" class="window" height="100">
         </a>
         <div class="cashless">
           <span>28</span><img src="images/coin.png" alt="Your Coin" class="coin-image">
@@ -97,7 +97,7 @@
     <div class="responsive2">
       <div class="gallery">
         <a href="images/ring_small.jpg">
-          <img src="images/ring_small.jpg" width="100" class="window" height="100">
+          <img src="images/ring_small.jpg" alt="Elden Ring" width="100" class="window" height="100">
         </a>
         <div class="cashless">
           <span>30</span><img src="images/coin.png" alt="Your Coin" class="coin-image">

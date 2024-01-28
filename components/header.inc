@@ -16,7 +16,7 @@
     </div>
 
     <span id="totalCoin">0</span>
-    <a href="exchange.php"><img src="images/coin.png" class="coinIcon"></a>
+    <a href="exchange.php"><img src="images/coin.png" class="coinIcon" alt="coin icon"></a>
 
     <a href="login.php" class="button" id="loginBtn">Log In / Sign Up</a>
 

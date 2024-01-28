@@ -37,32 +37,32 @@
 
             <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
-                <img src="images/gta_big.jpg" style="width:100%">
+                <img src="images/gta_big.jpg" style="width:100%" alt="GTA IV">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
-                <img src="images/mine_big.jpg" style="width:100%">
+                <img src="images/mine_big.jpg" style="width:100%" alt="Minecraft">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
-                <img src="images/fifa_big.jpg" style="width:100%">
+                <img src="images/fifa_big.jpg" style="width:100%" alt="Fifa23">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
-                <img src="images/red_big.jpg" style="width:100%">
+                <img src="images/red_big.jpg" style="width:100%" alt="Red Dead Redemption 2">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
-                <img src="images/spider_big.jpg" style="width:100%">
+                <img src="images/spider_big.jpg" style="width:100%" alt="Spider Man 2">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
-                <img src="images/ring_big.jpg" style="width:100%">
+                <img src="images/ring_big.jpg" style="width:100%" alt="Elden Ring">
             </div>
 
             <!-- Next and previous buttons -->
