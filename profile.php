@@ -8,8 +8,8 @@
     <meta name="author" content="Group 02">
     <meta name="description" content="Assignment 01 - Static Website">
     <title>Profile Page</title>
-    <link rel="stylesheet" href="../styles/profile.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,12 +18,12 @@
     <div class="container">
         <?php
         session_start();
-        include "../components/header.inc";
+        include "components/header.inc";
         ?>
 
         <div class="card">
             <div class="left-container">
-                <img src="../images/hbach.jpg" alt="profile image">
+                <img src="images/hbach.jpg" alt="profile image">
                 <h2>Ha Bach</h2>
             </div>
 
@@ -60,11 +60,11 @@
 
         </div>
         <?php
-        include "../components/footer.inc";
-        include "../components/button_switch.php";
+        include "components/footer.inc";
+        include "php/button_switch.php";
         ?>
-        <script src="../script/logout.js"></script>
-        <script src="../script/script.js"></script>
+        <script src="script/logout.js"></script>
+        <script src="script/script.js"></script>
 </body>
 
 </html>

@@ -7,8 +7,8 @@
     <meta name="author" content="Group 02">
     <meta name="description" content="Assignment 01 - Static Website">
     <title>Log In Page</title>
-    <link rel="stylesheet" href="../styles/login.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -33,7 +33,7 @@
                 {
                     $_SESSION["remember"] = false;
                 }
-                header("Location: homepage.php");
+                header("Location: index.php");
             } else {
                 echo "<script>alert('Invalid username or password!')</script>";
             }
@@ -105,9 +105,9 @@
         <br>Password: admin
     </aside>
 
-    <script src="../script/login.js"></script>
+    <script src="script/login.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

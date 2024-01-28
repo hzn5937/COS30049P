@@ -8,8 +8,8 @@
     <meta name="author" content="Group 02">
     <meta name="description" content="Assignment 01 - Static Website">
     <title>About Page</title>
-    <link rel="stylesheet" href="../styles/about.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,15 +17,15 @@
 <body>
     <div class="container">
         <?php
-        session_start();
-        include "../components/header.inc";
+            session_start();
+            include "components/header.inc";
         ?>
 
         <div class="content">
             <h1>GameDex Project Team Member</h1>
 
             <div class="info_card">
-                <img src="../images/hbach.jpg" alt="Member 1">
+                <img src="images/hbach.jpg" alt="Member 1">
                 <h2>Nguyen Ha Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
@@ -35,7 +35,7 @@
             </div>
 
             <div class="info_card">
-                <img src="../images/thanhbach.jpg" alt="Member 2">
+                <img src="images/thanhbach.jpg" alt="Member 2">
                 <h2>Phan Thanh Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
@@ -45,7 +45,7 @@
             </div>
 
             <div class="info_card">
-                <img src="../images/hbach.jpg" alt="Member 1">
+                <img src="images/hbach.jpg" alt="Member 1">
                 <h2>Nguyen Ha Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
@@ -55,7 +55,7 @@
             </div>
 
             <div class="info_card">
-                <img src="../images/hbach.jpg" alt="Member 1">
+                <img src="images/hbach.jpg" alt="Member 1">
                 <h2>Nguyen Ha Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
@@ -65,7 +65,7 @@
             </div>
 
             <div class="info_card">
-                <img src="../images/hbach.jpg" alt="Member 1">
+                <img src="images/hbach.jpg" alt="Member 1">
                 <h2>Nguyen Ha Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
@@ -75,7 +75,7 @@
             </div>
 
             <div class="info_card">
-                <img src="../images/hbach.jpg" alt="Member 1">
+                <img src="images/hbach.jpg" alt="Member 1">
                 <h2>Nguyen Ha Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
@@ -86,12 +86,12 @@
         </div>
 
         <?php
-            include "../components/footer.inc";
-            include "../components/button_switch.php";
+            include "components/footer.inc";
+            include "php/button_switch.php";
         ?>
     </div>
 
-    <script src="../script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

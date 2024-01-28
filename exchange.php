@@ -7,8 +7,8 @@
     <meta name="author" content="Group 02">
     <meta name="description" content="Assignment 01 - Static Website">
     <title>Exchange Page</title>
-    <link rel="stylesheet" href="../styles/exchange.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/exchange.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,7 +16,7 @@
     <div class="container">
         <?php
             session_start();
-            include "../components/header.inc";
+            include "components/header.inc";
             if (!isset($_SESSION["username"]))
             {
                 header("Location: login.php");
@@ -34,11 +34,11 @@
         </div>
         
         <?php
-            include "../components/footer.inc";
-            include "../components/button_switch.php";
+            include "components/footer.inc";
+            include "php/button_switch.php";
         ?>
     </div>
-    <script src="../script/script.js"></script>
-    <script src="../script/exchange.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/exchange.js"></script>
 </body>
 </html>

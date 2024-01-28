@@ -8,8 +8,8 @@
     <meta name="author" content="Group 02">
     <meta name="description" content="Assignment 01 - Static Website">
     <title>Home Page</title>
-    <link rel="stylesheet" href="../styles/homepage.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -20,7 +20,7 @@
 
         <?php
             session_start();
-            include "../components/header.inc"; 
+            include "components/header.inc"; 
         ?>
         
 
@@ -37,32 +37,32 @@
 
             <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
-                <img src="../images/gta_big.jpg" style="width:100%">
+                <img src="images/gta_big.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
-                <img src="../images/mine_big.jpg" style="width:100%">
+                <img src="images/mine_big.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
-                <img src="../images/fifa_big.jpg" style="width:100%">
+                <img src="images/fifa_big.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
-                <img src="../images/red_big.jpg" style="width:100%">
+                <img src="images/red_big.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
-                <img src="../images/spider_big.jpg" style="width:100%">
+                <img src="images/spider_big.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
-                <img src="../images/ring_big.jpg" style="width:100%">
+                <img src="images/ring_big.jpg" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->
@@ -78,32 +78,32 @@
             <!-- Thumbnail images -->
             <div class="row">
                 <div class="column">
-                    <img class="demo cursor" src="../images/gta_small.jpg" style="width:100%" onclick="currentSlide(1)"
+                    <img class="demo cursor" src="images/gta_small.jpg" style="width:100%" onclick="currentSlide(1)"
                         alt="GTA 5 - Premium Edition">
                 </div>
 
                 <div class="column">
-                    <img class="demo cursor" src="../images/mine_small.jpg" style="width:100%" onclick="currentSlide(2)"
+                    <img class="demo cursor" src="images/mine_small.jpg" style="width:100%" onclick="currentSlide(2)"
                         alt="Minecraft">
                 </div>
 
                 <div class="column">
-                    <img class="demo cursor" src="../images/fifa_small.jpg" style="width:100%" onclick="currentSlide(3)"
+                    <img class="demo cursor" src="images/fifa_small.jpg" style="width:100%" onclick="currentSlide(3)"
                         alt="Fifa 23 - Standard Edition">
                 </div>
 
                 <div class="column">
-                    <img class="demo cursor" src="../images/red_small.jpg" style="width:100%" onclick="currentSlide(4)"
+                    <img class="demo cursor" src="images/red_small.jpg" style="width:100%" onclick="currentSlide(4)"
                         alt="Red Dead Redemption II">
                 </div>
 
                 <div class="column">
-                    <img class="demo cursor" src="../images/spider_small.jpg" style="width:100%" onclick="currentSlide(5)"
+                    <img class="demo cursor" src="images/spider_small.jpg" style="width:100%" onclick="currentSlide(5)"
                         alt="Spiderman 2">
                 </div>
 
                 <div class="column">
-                    <img class="demo cursor" src="../images/ring_small.jpg" style="width:100%" onclick="currentSlide(6)"
+                    <img class="demo cursor" src="images/ring_small.jpg" style="width:100%" onclick="currentSlide(6)"
                         alt="Elden Ring">
                 </div>
 
@@ -111,12 +111,12 @@
         </div>
 
         <?php
-            include "../components/footer.inc";
-            include "../components/button_switch.php";
+            include "components/footer.inc";
+            include "php/button_switch.php";
         ?>
     </div>  
-    <script src="../script/slide.js"></script>    
-    <script src="../script/script.js"></script>
+    <script src="script/slide.js"></script>    
+    <script src="script/script.js"></script>
 </body>
 
 </html>

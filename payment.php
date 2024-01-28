@@ -8,8 +8,8 @@
     <meta name="author" content="Group 02">
     <meta name="description" content="Assignment 01 - Static Website">
     <title>Payment Page</title>
-    <link rel="stylesheet" href="../styles/payment.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,7 +18,7 @@
     <div class="container">
         <?php
         session_start();
-        include "../components/header.inc";
+        include "components/header.inc";
         ?>
 
         <div class="shopping-container">
@@ -37,7 +37,7 @@
                         <tr>
                             <td>
                                 <div class="product-info">
-                                    <img src="../images/mine_small.jpg">
+                                    <img src="images/mine_small.jpg">
                                     <div>
                                         <p>Minecraft</p>
                                         <small>Java Edition</small>
@@ -49,14 +49,14 @@
                             <td>
                                 <div class="price-info">
                                     <p id="price1">30</p>
-                                    <img src="../images/coin.png">
+                                    <img src="images/coin.png">
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <div class="product-info">
-                                    <img src="../images/fifa_small.jpg">
+                                    <img src="images/fifa_small.jpg">
                                     <div>
                                         <p>Fifa 23</p>
                                         <small>Standard Edition</small>
@@ -68,14 +68,14 @@
                             <td>
                                 <div class="price-info">
                                     <p id="price2">30</p>
-                                    <img src="../images/coin.png">
+                                    <img src="images/coin.png">
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <div class="product-info">
-                                    <img src="../images/gta_small.jpg">
+                                    <img src="images/gta_small.jpg">
                                     <div>
                                         <p>Grand Thief Auto V</p>
                                         <small>Premium Edition</small>
@@ -87,7 +87,7 @@
                             <td>
                                 <div class="price-info">
                                     <p id="price3">30</p>
-                                    <img src="../images/coin.png">
+                                    <img src="images/coin.png">
                                 </div>
                             </td>
                         </tr>
@@ -102,7 +102,7 @@
                         <td>
                             <div class="price-info">
                                 <p id="subTotalPrice">90</p>
-                                <img src="../images/coin.png">
+                                <img src="images/coin.png">
                             </div>
                         </td>
                     </tr>
@@ -111,7 +111,7 @@
                         <td>
                             <div class="price-info">
                                 <p id="discount">0</p>
-                                <img src="../images/coin.png">
+                                <img src="images/coin.png">
                             </div>
                         </td>
                     </tr>
@@ -125,7 +125,7 @@
                         <td>
                             <div class="total-price-info">
                                 <p id="totalPrice">90</p>
-                                <img src="../images/coin.png">
+                                <img src="images/coin.png">
                             </div>
                         </td>
                     </tr>
@@ -135,12 +135,12 @@
         </div>
 
         <?php
-        include "../components/footer.inc";
-        include "../components/button_switch.php";
+        include "components/footer.inc";
+        include "php/button_switch.php";
         ?>
     </div>
-    <script src="../script/quantity.js"></script>
-    <script src="../script/script.js"></script>
+    <script src="script/quantity.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

@@ -4,10 +4,10 @@ signoutBtn.onclick = function () {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            // Redirect to homepage after destroying the session
-            window.location.href = "homepage.php";
+            // Redirect to index after destroying the session
+            window.location.href = "index.php";
         }
     };
-    xhr.open("GET", "logout.php", true);
+    xhr.open("GET", "php/logout.php", true);
     xhr.send();
 };
