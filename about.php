@@ -47,7 +47,7 @@
 
             <div class="info_card">
                 <img src="images/son.jpg" alt="Member 3">
-                <h2>Nguyen Ha Bach</h2>
+                <h2>Nguyen Thai Son</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
                     voluptatum fugit explicabo est, illum iure suscipit rerum tempora numquam, sapiente a molestiae!
@@ -57,7 +57,7 @@
 
             <div class="info_card">
                 <img src="images/hbach.jpg" alt="Member 4">
-                <h2>Nguyen Thai Son</h2>
+                <h2>Nguyen Ha Bach</h2>
                 <p>
                         <!-- 21 years old excited and enthusiastic about programming and video games. Still figuring out life as it goes. -->
                        
