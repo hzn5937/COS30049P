@@ -45,7 +45,7 @@
             </div>
 
             <div class="info_card">
-                <img src="images/hbach.jpg" alt="Member 1">
+                <img src="images/hbach.jpg" alt="Member 3">
                 <h2>Nguyen Ha Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
@@ -55,7 +55,15 @@
             </div>
 
             <div class="info_card">
-                <img src="images/hbach.jpg" alt="Member 1">
+                <img src="images/son.jpg" alt="Member 4">
+                <h2>Nguyen Thai Son</h2>
+                <p>
+                    21 years old excited and enthusiastic about programming and video games. Still figuring out life as it goes.
+                </p>
+            </div>
+
+            <div class="info_card">
+                <img src="images/hbach.jpg" alt="Member 5">
                 <h2>Nguyen Ha Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
@@ -65,17 +73,7 @@
             </div>
 
             <div class="info_card">
-                <img src="images/hbach.jpg" alt="Member 1">
-                <h2>Nguyen Ha Bach</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
-                    voluptatum fugit explicabo est, illum iure suscipit rerum tempora numquam, sapiente a molestiae!
-                    Error officiis consequatur expedita?
-                </p>
-            </div>
-
-            <div class="info_card">
-                <img src="images/hbach.jpg" alt="Member 1">
+                <img src="images/hbach.jpg" alt="Member 6">
                 <h2>Nguyen Ha Bach</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
