@@ -58,11 +58,13 @@
             <div class="info_card">
                 <img src="images/hbach.jpg" alt="Member 4">
                 <h2>Nguyen Thai Son</h2>
-                <div class="info">
-                    <p>
-                        21 years old excited and enthusiastic about programming and video games. Still figuring out life as it goes.
-                    </p>
-                </div>
+                <p>
+                        <!-- 21 years old excited and enthusiastic about programming and video games. Still figuring out life as it goes. -->
+                       
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore, eaque nihil recusandae
+                    voluptatum fugit explicabo est, illum iure suscipit rerum tempora numquam, sapiente a molestiae!
+                    Error officiis consequatur expedita?
+                </p>
                 
             </div>
 

@@ -18,6 +18,8 @@ description: CSS file for about.php
 .info_card img {
     width: 100%;
     height: auto;
+    position: absolute;
+    top: 0;
 }
 .info_card h1 {
     background-color: indianred;
@@ -39,3 +41,4 @@ description: CSS file for about.php
 .container .content {
     margin: 0px;
 }
+
