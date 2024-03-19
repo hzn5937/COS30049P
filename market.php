@@ -1,8 +1,3 @@
-<?php
-include_once 'db_connection.php';
-session_start(); // Starting the session
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,46 +18,26 @@ session_start(); // Starting the session
 <body>
   <div class="container">
     <?php
-    include "components/header.inc";
+      session_start();
+      include "components/header.inc";
+      include_once 'db_connection.php';
+      include 'render.php';
     ?>
 
     <h1>Top Games</h1>
     <div class="section-title">
       <h2>Trending Now</h2>
     </div>
-
     <?php
-    // Fetch data from database
-    $sql = "SELECT * FROM product";
-    $result = $conn->query($sql);
-
-    // Check if there are any results
-    if ($result->num_rows > 0) {
-      // Output data of each row
-      while ($row = $result->fetch_assoc()) {
-    ?>
-        <div class="responsive">
-          <div class="gallery">
-            <a href="<?php echo $row['image_path']; ?>">
-              <img src="<?php echo $row['image_path']; ?>" alt="<?php echo $row['name']; ?>" class="window" width="100" height="100">
-            </a>
-            <div class="cashless">
-              <span><?php echo $row['price']; ?></span><img src="images/coin.png" alt="Your Coin" class="coin-image">
-              <a href="payment.php" class="button2">Buy</a>
-            </div>
-          </div>
-        </div>
+      $sql = "SELECT * FROM product";
+      $all_product = $conn->query($sql);
+      render($all_product);
+    ?> 
+    
     <?php
-      }
-    } else {
-      echo "0 results";
-    }
-
-    // Include footer and other PHP scripts
-    include "components/footer.inc";
-    include "php/button_switch.php";
+      include "components/footer.inc";
+      include "php/button_switch.php";
     ?>
-
   </div>
   <script src="script/script.js"></script>
 </body>
