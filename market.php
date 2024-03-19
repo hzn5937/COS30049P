@@ -21,7 +21,7 @@
       session_start();
       include "components/header.inc";
       include_once 'db_connection.php';
-      include 'render.php';
+      include 'php/render.php';
     ?>
 
     <h1>Top Games</h1>
