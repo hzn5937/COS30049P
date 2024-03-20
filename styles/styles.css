@@ -149,9 +149,11 @@ nav .profileButton {
     text-align: center;
     font-size: 18px;
     margin-bottom: 0;
+    color: white;
 }
 
 .main-footer ul {
+    color: white;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -161,10 +163,11 @@ nav .profileButton {
 
 .main-footer li {
     padding: 5px;
+    color: white;
 }
 
 .main-footer ul a {
-    color: inherit;
+    color: white;
     text-decoration: none;
     opacity: 0.8;
 }
@@ -177,6 +180,7 @@ nav .profileButton {
 /* Styling The Icon In Footer */
 .main-footer .icon-footer {
     text-align: center;
+    color: white;
 }
 
 .main-footer .icon-footer a {
@@ -189,7 +193,7 @@ nav .profileButton {
     border-radius: 50%;
     border: 1px solid grey;
     margin: 0 8px;
-    color: inherit;
+    color: white;
     opacity: 0.75;
 }
 

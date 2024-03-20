@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 19, 2024 at 11:11 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- Generation Time: Mar 20, 2024 at 08:05 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -125,7 +125,10 @@ INSERT INTO `product` (`name`, `price`, `image_path`) VALUES
 ('FIFA 23', 30, 'https://cdn.akamai.steamstatic.com/steam/apps/1811260/capsule_616x353.jpg?t=1704287288'),
 ('ELDEN RING 2', 40, 'https://cdn.akamai.steamstatic.com/steam/apps/1245620/capsule_616x353.jpg?t=1710261394'),
 ('MINECRAFT', 30, 'https://cdn.akamai.steamstatic.com/steam/apps/1928870/capsule_616x353.jpg?t=1682680309'),
-('GTA5', 20, 'https://steamuserimages-a.akamaihd.net/ugc/266093216359350992/EAD31F80E42FDC2645D76AD5B6727F786089C9C3/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+('DARK SOUL 2', 20, 'https://cdn.akamai.steamstatic.com/steam/apps/236430/capsule_616x353.jpg?t=1669850633'),
+('APEX LEGEND', 25, 'https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_616x353.jpg?t=1708706824'),
+('PUBG', 20, 'https://cdn.akamai.steamstatic.com/steam/apps/578080/capsule_616x353.jpg?t=1710727439'),
+('GTA', 20, 'https://steamuserimages-a.akamaihd.net/ugc/266093216359350992/EAD31F80E42FDC2645D76AD5B6727F786089C9C3/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
 
 -- --------------------------------------------------------
 
