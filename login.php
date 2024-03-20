@@ -1,3 +1,23 @@
+<?php
+    require_once ('db_connection.php');
+
+    $query = "SELECT user_id, username, password FROM users";
+    $result = $conn->query($query);
+
+    $data = array();
+    if ($result)
+    {
+        $x = 0;
+        while ($row = mysqli_fetch_assoc($result))
+        {
+            $data[$x]['user_id'] = $row['user_id'];
+            $data[$x]['username'] = $row['username'];
+            $data[$x]['password'] = $row['password'];
+            $x++;
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,22 +42,43 @@
             $username = $_POST['username'];
             $password = $_POST['password'];
 
-            if ($username === $validateUsername && $password === $validatePassword) {
-                session_start();
-                $_SESSION['user_id'] = 1; //will be change later according to user id in database
-                $_SESSION['username'] = $username;
-                if (isset($_POST["remember"]))
+            for ($i = 0; $i < count($data); $i++)
+            {
+                if ($username === $data[$i]['username'] && $password === $data[$i]['password'])
                 {
-                    $_SESSION["remember"] = true;
+                    session_start();
+                    $_SESSION['user_id'] = $data[$i]['user_id'];
+                    $_SESSION['username'] = $username;
+                    if (isset($_POST["remember"]))
+                    {
+                        $_SESSION["remember"] = true;
+                    }
+                    else
+                    {
+                        $_SESSION["remember"] = false;
+                    }
+                    header("Location: index.php");
                 }
-                else
-                {
-                    $_SESSION["remember"] = false;
-                }
-                header("Location: index.php");
-            } else {
-                echo "<script>alert('Invalid username or password!')</script>";
             }
+            echo "<script>alert('Invalid username or password!')</script>";
+
+
+            // if ($username === $validateUsername && $password === $validatePassword) {
+            //     session_start();
+            //     $_SESSION['user_id'] = 1; //will be change later according to user id in database
+            //     $_SESSION['username'] = $username;
+            //     if (isset($_POST["remember"]))
+            //     {
+            //         $_SESSION["remember"] = true;
+            //     }
+            //     else
+            //     {
+            //         $_SESSION["remember"] = false;
+            //     }
+            //     header("Location: index.php");
+            // } else {
+            //     echo "<script>alert('Invalid username or password!')</script>";
+            // }
         }
     ?>
 

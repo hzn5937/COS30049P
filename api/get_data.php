@@ -1,7 +1,7 @@
 <?php
     require_once ('../db_connection.php');
 
-    $sql = "SELECT * FROM product";
+    $sql = "SELECT * FROM asset";
     $result = $conn->query($sql);
 
     $response = array();

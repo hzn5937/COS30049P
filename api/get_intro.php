@@ -1,7 +1,7 @@
 <?php
     require_once ('../db_connection.php');
 
-    $sql = "SELECT name, image_path FROM product LIMIT 6";
+    $sql = "SELECT name, image_path FROM asset LIMIT 6";
     $result = $conn->query($sql);
 
     $response = array();
