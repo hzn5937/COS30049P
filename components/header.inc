@@ -8,13 +8,6 @@
         <li><a href="about.php" <?php if(basename($_SERVER['PHP_SELF']) == 'about.php') { echo 'class="active"'; } ?>>About Us</a></li>
     </ul>
 
-    <div class="searchBox">
-        <form action="/search" method="get">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <input type="text" name="q" placeholder="Search..." required>
-        </form>
-    </div>
-
     <span id="totalCoin">0</span>
     <a href="exchange.php"><img src="images/coin.png" class="coinIcon" alt="coin icon"></a>
 
