@@ -58,6 +58,13 @@ module.exports = {
    */
 
   networks: {
+    AWS: {
+      host:"44.209.197.113",
+      port: 8545,
+      network_id: "9999",
+      from: "0x795897be3B242565Ffae6f3E8fDe4d57189d0021",
+      gas: 4500000
+  }
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache, geth, or parity) in a separate terminal
