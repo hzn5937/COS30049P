@@ -34,6 +34,10 @@
             <p id="totalCost">Total cost: </p>
         </div>
         
+        <div class="history">
+            <h1>Transactions History</h1>
+        </div>
+
         <?php
             include "components/footer.inc";
             include "php/button_switch.php";
