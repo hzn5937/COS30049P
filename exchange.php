@@ -32,10 +32,47 @@
             <input type="text" id="exchange" name="exchange" value="" placeholder="$" oninput="totalCostCheck();">
             <button id="btn" onclick="checkValue();">Pay</button><br>
             <p id="totalCost">Total cost: </p>
-        </div>
-        
-        <div class="history">
+
             <h1>Transactions History</h1>
+            <table id="history">
+                <tr>
+                    <th>ID</th>
+                    <th>Balance</th>
+                    <th>Date</th>
+                    <th>Contract</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>125234</td>
+                    <td>2024-03-20</td>
+                    <td>1h2u3hytu2341u324u</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>125234</td>
+                    <td>2024-03-20</td>
+                    <td>1h2u3hytu2341u324u</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>125234</td>
+                    <td>2024-03-20</td>
+                    <td>1h2u3hytu2341u324u</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>125234</td>
+                    <td>2024-03-20</td>
+                    <td>1h2u3hytu2341u324u</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>125234</td>
+                    <td>2024-03-20</td>
+                    <td>1h2u3hytu2341u324u</td>
+                </tr>
+            </table>
+
         </div>
 
         <?php
@@ -43,6 +80,7 @@
             include "php/button_switch.php";
         ?>
     </div>
+    
     <script src="script/script.js"></script>
     <script src="script/exchange.js"></script>
 </body>

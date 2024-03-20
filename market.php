@@ -27,6 +27,13 @@
     <div class="section-title">
       <h2>Trending Now</h2>
     </div>
+    
+    <div class="searchBox">
+        <form action="/search" method="get">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" name="q" placeholder="Search..." required>
+        </form>
+    </div>
 
     <div class='games'>
       

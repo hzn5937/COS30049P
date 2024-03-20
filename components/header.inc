@@ -15,7 +15,7 @@
         </form>
     </div>
 
-    <span id="totalCoin">0</span>
+    <span id="totalCoin"></span>
     <a href="exchange.php"><img src="images/coin.png" class="coinIcon" alt="coin icon"></a>
 
     <a href="login.php" class="button" id="loginBtn">Log In / Sign Up</a>
