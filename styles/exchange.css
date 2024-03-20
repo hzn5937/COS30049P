@@ -27,3 +27,9 @@
     display: inline-block;
     font-size: 16px;
 }
+
+.main_content #history {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
