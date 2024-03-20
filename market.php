@@ -21,25 +21,24 @@
       session_start();
       include "components/header.inc";
       include_once 'db_connection.php';
-      include 'php/render.php';
     ?>
 
     <h1>Top Games</h1>
     <div class="section-title">
       <h2>Trending Now</h2>
     </div>
-    <?php
-      $sql = "SELECT * FROM product";
-      $all_product = $conn->query($sql);
-      render($all_product);
-    ?> 
-    
+
+    <div class='games'>
+      
+    </div>
+
     <?php
       include "components/footer.inc";
       include "php/button_switch.php";
     ?>
   </div>
-  <script src="script/script.js"></script>
+  <!-- <script src="script/script.js"></script> -->
+  <script src="script/render.js"></script>
 </body>
 
 </html>
