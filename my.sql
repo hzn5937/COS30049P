@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 20, 2024 at 08:05 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Mar 20, 2024 at 10:18 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -106,29 +106,14 @@ CREATE TABLE `exchange` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
+-- Table structure for table `login`
 --
 
-CREATE TABLE `product` (
-  `name` varchar(255) NOT NULL,
-  `price` decimal(60,0) NOT NULL,
-  `image_path` varchar(255) NOT NULL
+CREATE TABLE `login` (
+  `user_id` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `product`
---
-
-INSERT INTO `product` (`name`, `price`, `image_path`) VALUES
-('SPIDER MAN 2', 25, 'https://cdn.akamai.steamstatic.com/steam/apps/1817070/capsule_616x353.jpg?t=1700663145'),
-('RED DEAD REDEMPTION II', 20, 'https://cdn.akamai.steamstatic.com/steam/apps/1174180/capsule_616x353.jpg?t=1695140956'),
-('FIFA 23', 30, 'https://cdn.akamai.steamstatic.com/steam/apps/1811260/capsule_616x353.jpg?t=1704287288'),
-('ELDEN RING 2', 40, 'https://cdn.akamai.steamstatic.com/steam/apps/1245620/capsule_616x353.jpg?t=1710261394'),
-('MINECRAFT', 30, 'https://cdn.akamai.steamstatic.com/steam/apps/1928870/capsule_616x353.jpg?t=1682680309'),
-('DARK SOUL 2', 20, 'https://cdn.akamai.steamstatic.com/steam/apps/236430/capsule_616x353.jpg?t=1669850633'),
-('APEX LEGEND', 25, 'https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_616x353.jpg?t=1708706824'),
-('PUBG', 20, 'https://cdn.akamai.steamstatic.com/steam/apps/578080/capsule_616x353.jpg?t=1710727439'),
-('GTA', 20, 'https://steamuserimages-a.akamaihd.net/ugc/266093216359350992/EAD31F80E42FDC2645D76AD5B6727F786089C9C3/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
 
 -- --------------------------------------------------------
 
@@ -194,6 +179,24 @@ CREATE TABLE `users` (
   `phone_number` varchar(20) NOT NULL,
   `coin` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `full_name`, `dob`, `user_address`, `phone_number`, `coin`) VALUES
+('U02389', 'Jessica Martinez', '1990-07-08', '222 Pine St, Riverdale, USA', '555-987-6543', 50),
+('U03245', 'James Johnson', '1979-06-15', '555 Elm St, Hillcrest, USA', '555-210-9876', 120.75),
+('U03421', 'Christopher Davis', '1985-04-25', '333 Cedar St, Hillcrest, USA', '555-789-1234', 300.25),
+('U04321', 'Ethan Brown', '1974-12-30', '999 Cedar St, Riverdale, USA', '555-789-1234', 180.25),
+('U04567', 'Michael Smith', '1976-09-20', '888 Maple St, Lakeside, USA', '555-876-5432', 75.75),
+('U05432', 'Isabella Smith', '1998-05-05', '888 Pine St, Mountainview, USA', '555-654-2109', 60),
+('U05612', 'David Wilson', '1982-11-05', '111 Oak St, Springdale, USA', '555-654-2109', 200),
+('U06789', 'Jacob Martinez', '1981-08-12', '777 Oak St, Springdale, USA', '555-321-7890', 210),
+('U07689', 'Emily Wilson', '1987-10-25', '444 Cedar St, Lakeside, USA', '555-987-6543', 175.5),
+('U08796', 'Emily Brown', '1995-05-10', '999 Elm St, Mountainview, USA', '555-321-7890', 100.25),
+('U08976', 'Sophia Garcia', '1993-03-20', '666 Maple St, Riverside, USA', '555-876-5432', 90.25),
+('U09834', 'Sarah Johnson', '1988-03-15', '777 Cedar St, Riverside, USA', '555-210-9876', 150.5);
 
 --
 -- Indexes for dumped tables
