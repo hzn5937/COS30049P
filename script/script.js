@@ -4,3 +4,14 @@ window.onunload = function () {
     xhr.open("GET", "php/close.php", true);
     xhr.send();
 };
+
+fetch("api/get_coin.php")
+    .then(function (response) {
+        return response.json();
+    })
+    .then((data) => {
+        document.querySelector("#totalCoin").innerHTML = data;
+    })
+    .catch((error) => {
+        console.log(error);
+    });
