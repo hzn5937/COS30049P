@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2024 at 02:13 PM
+-- Generation Time: Mar 21, 2024 at 02:43 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -163,7 +163,8 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `user_email` varchar(255) DEFAULT NULL,
   `full_name` varchar(255) NOT NULL,
-  `dob` date NOT NULL,
+  `age` int(3) NOT NULL,
+  `interest` varchar(255) NOT NULL,
   `user_address` varchar(255) NOT NULL,
   `phone_number` varchar(20) NOT NULL,
   `coin` float NOT NULL
@@ -173,19 +174,19 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `username`, `password`, `user_email`, `full_name`, `dob`, `user_address`, `phone_number`, `coin`) VALUES
-(1, 'admin', 'admin', 'admin@gmail.com', 'Jessica Martinez', '1990-07-08', '222 Pine St, Riverdale, USA', '555-987-6543', 50),
-(2, 'test', 'test', 'test@example.com', 'James Johnson', '1979-06-15', '555 Elm St, Hillcrest, USA', '555-210-9876', 120.75),
-(3, 'chrisd', 'Chri$123', 'chrisd@example.com', 'Christopher Davis', '1985-04-25', '333 Cedar St, Hillcrest, USA', '555-789-1234', 300.25),
-(4, 'ethanb', '3th@nB!wn', 'ethanb@example.com', 'Ethan Brown', '1974-12-30', '999 Cedar St, Riverdale, USA', '555-789-1234', 180.25),
-(5, 'michael82', 'M!ch@el82', 'michael82@example.com', 'Michael Smith', '1976-09-20', '888 Maple St, Lakeside, USA', '555-876-5432', 75.75),
-(6, 'isabellas', '1s@b3ll@', 'isabellas@example.com', 'Isabella Smith', '1998-05-05', '888 Pine St, Mountainview, USA', '555-654-2109', 60),
-(7, 'davidw', 'Dav1dW!lson', 'davidw@example.com', 'David Wilson', '1982-11-05', '111 Oak St, Springdale, USA', '555-654-2109', 200),
-(8, 'jacobm', 'J@cob321', 'jacobm@example.com', 'Jacob Martinez', '1981-08-12', '777 Oak St, Springdale, USA', '555-321-7890', 210),
-(9, 'emilyw', 'Em!lyW!ls0n', 'emilyw@example.com', 'Emily Wilson', '1987-10-25', '444 Cedar St, Lakeside, USA', '555-987-6543', 175.5),
-(10, 'emilybrown', 'Em!lyB0wn', 'emilybrown@example.com', 'Emily Brown', '1995-05-10', '999 Elm St, Mountainview, USA', '555-321-7890', 100.25),
-(11, 'sophiag', 'S0ph!@123', 'sophiag@example.com', 'Sophia Garcia', '1993-03-20', '666 Maple St, Riverside, USA', '555-876-5432', 90.25),
-(12, 'sarahj', 'S@rah123', 'sarahj@example.com', 'Sarah Johnson', '1988-03-15', '777 Cedar St, Riverside, USA', '555-210-9876', 150.5);
+INSERT INTO `users` (`user_id`, `username`, `password`, `user_email`, `full_name`, `age`, `interest`, `user_address`, `phone_number`, `coin`) VALUES
+(1, 'admin', 'admin', 'admin@gmail.com', 'Jessica Martinez', 20, 'Photography', '222 Pine St, Riverdale, USA', '555-987-6543', 50),
+(2, 'test', 'test', 'test@example.com', 'James Johnson', 53, 'Travel', '555 Elm St, Hillcrest, USA', '555-210-9876', 120.75),
+(3, 'chrisd', 'Chri$123', 'chrisd@example.com', 'Christopher Davis', 35, 'Fashion', '333 Cedar St, Hillcrest, USA', '555-789-1234', 300.25),
+(4, 'ethanb', '3th@nB!wn', 'ethanb@example.com', 'Ethan Brown', 51, 'Gardening', '999 Cedar St, Riverdale, USA', '555-789-1234', 180.25),
+(5, 'michael82', 'M!ch@el82', 'michael82@example.com', 'Michael Smith', 27, 'Gardening', '888 Maple St, Lakeside, USA', '555-876-5432', 75.75),
+(6, 'isabellas', '1s@b3ll@', 'isabellas@example.com', 'Isabella Smith', 18, 'Photography', '888 Pine St, Mountainview, USA', '555-654-2109', 60),
+(7, 'davidw', 'Dav1dW!lson', 'davidw@example.com', 'David Wilson', 43, 'Cooking', '111 Oak St, Springdale, USA', '555-654-2109', 200),
+(8, 'jacobm', 'J@cob321', 'jacobm@example.com', 'Jacob Martinez', 36, 'Photography', '777 Oak St, Springdale, USA', '555-321-7890', 210),
+(9, 'emilyw', 'Em!lyW!ls0n', 'emilyw@example.com', 'Emily Wilson', 37, 'Travel', '444 Cedar St, Lakeside, USA', '555-987-6543', 175.5),
+(10, 'emilybrown', 'Em!lyB0wn', 'emilybrown@example.com', 'Emily Brown', 57, 'Sports', '999 Elm St, Mountainview, USA', '555-321-7890', 100.25),
+(11, 'sophiag', 'S0ph!@123', 'sophiag@example.com', 'Sophia Garcia', 52, 'Reading', '666 Maple St, Riverside, USA', '555-876-5432', 90.25),
+(12, 'sarahj', 'S@rah123', 'sarahj@example.com', 'Sarah Johnson', 20, 'Fashion', '777 Cedar St, Riverside, USA', '555-210-9876', 150.5);
 
 --
 -- Indexes for dumped tables
