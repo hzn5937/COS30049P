@@ -33,23 +33,23 @@
                 <table>
                     <tr>
                         <td>Name :</td>
-                        <td contenteditable='true'>Ha Bach</td>
+                        <td id='content1' contenteditable='false'>Ha Bach</td>
                     </tr>
                     <tr>
                         <td>Age :</td>
-                        <td contenteditable='true'>69</td>
+                        <td id='content2' contenteditable='false'>69</td>
                     </tr>
                     <tr>
                         <td>Number :</td>
-                        <td contenteditable='true'>0936071506</td>
+                        <td id='content3' contenteditable='false'>0936071506</td>
                     </tr>
                     <tr>
                         <td>Email :</td>
-                        <td contenteditable='true'>habach05032003@gmail.com</td>
+                        <td id='content4' contenteditable='false'>habach05032003@gmail.com</td>
                     </tr>
                     <tr>
                         <td>Address :</td>
-                        <td contenteditable='true'>12345, Duy Tan, Ha Noi, Viet Nam </td>
+                        <td id='content5' contenteditable='false'>12345, Duy Tan, Ha Noi, Viet Nam </td>
                     </tr>
                 </table>
 
@@ -67,6 +67,7 @@
         ?>
         <script src="script/logout.js"></script>
         <script src="script/script.js"></script>
+        <script src="script/profile.js"></script>
 </body>
 
 </html>
