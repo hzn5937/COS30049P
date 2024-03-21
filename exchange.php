@@ -31,6 +31,7 @@
             <label for="exchange"></label>
             <input type="text" id="exchange" name="exchange" value="" placeholder="$" oninput="totalCostCheck();">
             <button id="btn" onclick="checkValue();">Pay</button><br>
+            <a href="smart/index.html">Pay</a>
             <p id="totalCost">Total cost: </p>
 
             <h1>Transactions History</h1>
