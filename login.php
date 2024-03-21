@@ -96,21 +96,21 @@
 
         <div class="form-box register">
             <h2>Registration</h2>
-            <form action="php/register.php">
+            <form action="php/register.php" method="post">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
                     <input type="text" id="username" name="username" required>
-                    <label>Username</label>
+                    <label for="username">Username</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" id="mail" name="mail" required>
-                    <label>Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                     <input type="password" id="password" name="password" required>
-                    <label>Password</label>
+                    <label for="password">Password</label>
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">I agree to the terms & conditions</label>

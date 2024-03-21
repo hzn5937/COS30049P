@@ -33,15 +33,16 @@
         $password = $_POST['password'];
     }
 
+
     for ($i = 0; $i < count($array); $i++)
     {
         if ($username === $array[$i]['username'])
         {
-            $_SESSION['errMsg'] .= "Username already exists!";
+            $_SESSION['errMsg'] .= "<p>Username already exists!</p>";
         }
         if ($email === $array[$i]['email'])
         {
-            $_SESSION['errMsg'] .= "Email already exists!";
+            $_SESSION['errMsg'] .= "<p>Email already exists!</p>";
         }
     }
 
@@ -55,6 +56,7 @@
         $result = $conn->query($query);
         if ($result)
         {
+            $_SESSION['errMsg'] = "<p>Registration successful!</p>";
             header("Location: ../login.php");
         }
     }
