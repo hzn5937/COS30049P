@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once ('db_connection.php');
 
     $query = "SELECT user_id, username, password FROM users";
@@ -61,24 +62,6 @@
                 }
             }
             echo "<script>alert('Invalid username or password!')</script>";
-
-
-            // if ($username === $validateUsername && $password === $validatePassword) {
-            //     session_start();
-            //     $_SESSION['user_id'] = 1; //will be change later according to user id in database
-            //     $_SESSION['username'] = $username;
-            //     if (isset($_POST["remember"]))
-            //     {
-            //         $_SESSION["remember"] = true;
-            //     }
-            //     else
-            //     {
-            //         $_SESSION["remember"] = false;
-            //     }
-            //     header("Location: index.php");
-            // } else {
-            //     echo "<script>alert('Invalid username or password!')</script>";
-            // }
         }
     ?>
 
@@ -113,20 +96,20 @@
 
         <div class="form-box register">
             <h2>Registration</h2>
-            <form action="#">
+            <form action="php/register.php">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
+                    <input type="text" id="username" name="username" required>
                     <label>Username</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="email" id="mail" name="mail" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input type="password" id="password" name="password" required>
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
@@ -142,9 +125,12 @@
     </div>
 
     <aside>
-        For Testing The Webpage, Please Use:
-        <br>Username: admin
-        <br>Password: admin
+        <?php
+            if (isset($_SESSION['errMsg']))
+            {
+                echo $_SESSION['errMsg'];   
+            }
+        ?>
     </aside>
 
     <script src="script/login.js"></script>
