@@ -30,7 +30,7 @@
             <h4>Enter number of coin:</h4>
             <label for="exchange"></label>
             <input type="text" id="exchange" name="exchange" value="" placeholder="$" oninput="totalCostCheck();">
-            <button id="btn" onclick="checkValue();">Pay</button><br>
+            <!-- <button id="btn" onclick="checkValue();">Pay</button><br> -->
             <a href="smart_contracts/index.html">Pay</a>
             <p id="totalCost">Total cost: </p>
 
