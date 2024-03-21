@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script/render.js"></script>
 </head>
 
 <body>
@@ -29,14 +30,14 @@
     </div>
 
     <div class="searchBox">
-        <form action="/search" method="get">
+        <form id="searchForm" action="market.php" method="get">
             <button type="submit"><i class="fa fa-search"></i></button>
-            <input type="text" name="q" placeholder="Search games..." required>
+            <input type="text" id="searchBar" name="search" placeholder="Search games..." required>
         </form>
     </div>
 
     <div class='games'>
-      
+      <script>render("api/get_data.php")</script>
     </div>
 
     <?php
@@ -45,7 +46,7 @@
     ?>
   </div>
   <!-- <script src="script/script.js"></script> -->
-  <script src="script/render.js"></script>
+  <!-- <script src="script/render.js"></script> -->
 </body>
 
 </html>

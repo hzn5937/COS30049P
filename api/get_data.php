@@ -1,7 +1,19 @@
 <?php
     require_once ('../db_connection.php');
 
+    if (isset($_GET['search']))
+    {
+        $search = $_GET['search'];
+    }
+
     $sql = "SELECT * FROM asset";
+
+    if (!empty($search)) {
+        $sql .= " WHERE name LIKE '%$search%'";
+    }
+    
+
+
     $result = $conn->query($sql);
 
     $response = array();
