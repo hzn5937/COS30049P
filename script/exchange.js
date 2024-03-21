@@ -3,9 +3,9 @@ var coinCount = 0;
 var totalCost = 0;
 const decimal = /^\d*\.?\d+$/;
 
-const coinInput = document.getElementById("exchange");
-const totalCostElement = document.getElementById("totalCost");
-const totalCoin = document.getElementById("totalCoin");
+const coinInput = document.getElementById("exchange"); //where to input money
+const totalCostElement = document.getElementById("totalCost");  //total money for coins below input
+const totalCoin = document.getElementById("totalCoin");  //coin cost
 
 window.onload = function () {
     document.getElementById("coinCost").innerHTML = "Cost for 1 coin: " + coinCost + "$";
