@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 20, 2024 at 12:17 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Mar 21, 2024 at 02:13 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,27 +42,27 @@ CREATE TABLE `asset` (
 --
 
 INSERT INTO `asset` (`asset_id`, `name`, `description`, `price`, `category_id`, `publisher_id`, `image_path`) VALUES
-('AI00001', 'Subnautica', 'Subnautica is a survival action-adventure game set in an open world environment and played from a first-person perspective. The player controls the lone survivor of the crashed spacecraft known as Aurora, Ryley Robinson, as he is stranded on a remote ocea', '32.50', 1, 1, 'https://cdn.akamai.steamstatic.com/steam/apps/264710/header.jpg?t=1700522118'),
-('AI00002', 'Lethal Company', 'Lethal Company is a cooperative survival horror video game created by Zeekerss. It released in early access in October 2023 and gained popularity on the Steam storefront. In Lethal Company, players obtain and sell scrap from abandoned, industrialized exom', '14.00', 2, 9, 'https://cdn.akamai.steamstatic.com/steam/apps/1966720/header.jpg?t=1700231592'),
-('AI00003', 'Hogwarts Legacy', 'Hogwarts Legacy - Home. Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. For the first time, experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient s', '12.95', 3, 6, 'https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg?t=1708720689'),
-('AI00004', 'Sons Of The Forest', 'Sons of the Forest is a horror survival game and sequel to The Forest by Endnight Games, Ltd.. Sent to find a missing billionaire on a remote island, you find yourself in a cannibal-infested hellscape. Craft, build, and struggle to survive, alone or with ', '38.76', 4, 10, 'https://cdn.akamai.steamstatic.com/steam/apps/1326470/header.jpg?t=1708624856'),
-('AI00005', 'No Man\'s Sky', 'No Man\'s Sky is an action-adventure survival game played from a first or third person perspective that allows players to engage in five principal activities: exploration, survival, combat, trading and base building.', '70.00', 5, 11, 'https://cdn.akamai.steamstatic.com/steam/apps/275850/header_alt_assets_19.jpg?t=1709306554'),
-('AI00006', 'Baldur\'s Gate 3', 'Gather your party, and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power. Mysterious abilities are awakening inside you, drawn from a Mind Flayer parasite planted in your brain. Res', '91.00', 6, 12, 'https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg?t=1705604554'),
-('AI00007', 'For Honor™', 'This is an action game in which players control one of three factions (Samurai, Vikings, Knights) in a protracted battle for dominance. As players complete mission objectives, they use swords, axes, and spears to kill enemy warriors in melee-style combat.', '49.55', 7, 13, 'https://cdn.akamai.steamstatic.com/steam/apps/304390/header.jpg?t=1710516613'),
-('AI00008', 'Fallout 4', 'Fallout 4 is an open-world role-playing game developed by Bethesda Game Studios. In it, the player begins as a parent and spouse in the year 2077, but then must enter Vault 111 to survive the nuclear apocalypse.', '45.15', 1, 14, 'https://cdn.akamai.steamstatic.com/steam/apps/377160/header.jpg?t=1650909928'),
-('AI00009', 'Left 4 Dead 2', 'This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns. You\'ll play as one of four new survivors armed with a wide and devast', '14.45', 3, 15, 'https://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg?t=1675801903'),
-('AI00010', 'Outlast 2', 'Outlast 2 is a first-person survival horror title set to take players on a wild ride through a rural area Arizona as they investigate the gruesome attempted murder of a pregnant woman found on the side of the road.', '38.12', 4, 16, 'https://cdn.akamai.steamstatic.com/steam/apps/414700/header.jpg?t=1618944453'),
-('AI00011', 'Resident Evil Village', 'Resident Evil Village is a 2021 survival horror game developed and published by Capcom. It is the sequel to Resident Evil 7: Biohazard (2017) and the tenth main game of the Resident Evil series. Players control Ethan Winters, who searches for his kidnappe', '88.00', 6, 7, 'https://cdn.akamai.steamstatic.com/steam/apps/1196590/header.jpg?t=1701395391'),
-('AI00012', 'The Binding of Isaac', 'The Binding of Isaac is a top-down dungeon crawler game, presented using two-dimensional sprites, in which the player controls Isaac or other unlockable characters as they explore the dungeons located in Isaac\'s basement.', '70.56', 5, 2, 'https://cdn.akamai.steamstatic.com/steam/apps/250900/capsule_616x353.jpg?t=1617174663'),
-('AI00013', 'Counter Strike 2', 'For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2.', '20.00', 5, 1, 'https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1698860631'),
-('AI00014', 'Dead by Daylight', 'Dead by Daylight is a multiplayer (4vs1) horror game where one player takes on the role of the savage Killer, and the other four players play as Survivors, trying to escape the Killer and avoid being caught, tortured and killed.', '2.54', 2, 3, 'https://cdn.akamai.steamstatic.com/steam/apps/381210/header.jpg?t=1710268442'),
-('AI00015', 'Plants vs. Zombies™ Garden Warfare 2: Deluxe Edition', 'In this hilarious, action-packed shooter, zombie leader Dr. Zomboss has strengthened his horde and rebuilt suburbia as a zombie utopia. But hope remains, because for the first time the plants are taking the offensive in an all-out attack to reclaim their ', '70.00', 1, 4, 'https://cdn.akamai.steamstatic.com/steam/apps/1922560/header.jpg?t=1707771436'),
-('AI00016', 'Palworld', 'Palworld is an upcoming action-adventure, survival, and monster-taming game created and published by Japanese developer Pocket Pair. The game is set in an open world populated with animal-like creatures called Pals, which players can battle and capture to', '38.56', 3, 5, 'https://cdn.akamai.steamstatic.com/steam/apps/1623730/header.jpg?t=1707904340'),
-('AI00017', 'Mortal Kombat 1', 'The game introduces a reborn Mortal Kombat Universe that has been created by the Fire God Liu Kang, featuring reimagined versions of iconic characters as they\'ve never been seen before, along with a new fighting system, game modes, bone krushing finishing', '12.90', 4, 6, 'https://cdn.akamai.steamstatic.com/steam/apps/1971870/header.jpg?t=1709136014'),
-('AI00018', 'Street Fighter V', 'An arcade version exclusive to Japan was released by Taito in 2019. Similar to the previous games in the Street Fighter series, Street Fighter V features a side-scrolling fighting gameplay system. The game also introduces the V-Gauge, which builds as the ', '45.00', 5, 7, 'https://cdn.akamai.steamstatic.com/steam/apps/310950/header.jpg?t=1705467952'),
-('AI00019', 'Street Fighter™ 6', 'Street Fighter 6 represents the next evolution of the Street Fighter, with three distinct game modes, including Fighting Ground, World Tour and Battle Hub. The experience also includes innovative new gameplay features, plus enhanced visuals for every aspe', '13.70', 5, 7, 'https://cdn.akamai.steamstatic.com/steam/apps/1364780/header_alt_assets_9.jpg?t=1709012771'),
-('AI00020', 'Hollow Knight', 'Hollow Knight is a classically styled 2D action adventure across a vast interconnected world. Explore twisting caverns, ancient cities and deadly wastes, battle tainted creatures and befriend bizarre bugs and solve ancient mysteries at the kingdom\'s heart', '16.50', 1, 8, 'https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg?t=1695270428'),
-('AI00021', 'Detroit: Become Human', 'Set in Detroit City during the year 2038, the city has been revitalized by the invention and introduction of Androids into everyday life. But when Androids start behaving as if they are alive, events begin to spin out of control.', '66.00', 6, 17, 'https://cdn.akamai.steamstatic.com/steam/apps/1222140/header.jpg?t=1667468479');
+('AI00001', 'Subnautica', 'Subnautica is a survival action-adventure game set in an open world environment and played from a first-person perspective. The player controls the lone survivor of the crashed spacecraft known as Aurora, Ryley Robinson, as he is stranded on a remote ocea', 32.50, 1, 1, 'https://cdn.akamai.steamstatic.com/steam/apps/264710/header.jpg?t=1700522118'),
+('AI00002', 'Lethal Company', 'Lethal Company is a cooperative survival horror video game created by Zeekerss. It released in early access in October 2023 and gained popularity on the Steam storefront. In Lethal Company, players obtain and sell scrap from abandoned, industrialized exom', 14.00, 2, 9, 'https://cdn.akamai.steamstatic.com/steam/apps/1966720/header.jpg?t=1700231592'),
+('AI00003', 'Hogwarts Legacy', 'Hogwarts Legacy - Home. Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. For the first time, experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient s', 12.95, 3, 6, 'https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg?t=1708720689'),
+('AI00004', 'Sons Of The Forest', 'Sons of the Forest is a horror survival game and sequel to The Forest by Endnight Games, Ltd.. Sent to find a missing billionaire on a remote island, you find yourself in a cannibal-infested hellscape. Craft, build, and struggle to survive, alone or with ', 38.76, 4, 10, 'https://cdn.akamai.steamstatic.com/steam/apps/1326470/header.jpg?t=1708624856'),
+('AI00005', 'No Man\'s Sky', 'No Man\'s Sky is an action-adventure survival game played from a first or third person perspective that allows players to engage in five principal activities: exploration, survival, combat, trading and base building.', 70.00, 5, 11, 'https://cdn.akamai.steamstatic.com/steam/apps/275850/header_alt_assets_19.jpg?t=1709306554'),
+('AI00006', 'Baldur\'s Gate 3', 'Gather your party, and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power. Mysterious abilities are awakening inside you, drawn from a Mind Flayer parasite planted in your brain. Res', 91.00, 6, 12, 'https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg?t=1705604554'),
+('AI00007', 'For Honor™', 'This is an action game in which players control one of three factions (Samurai, Vikings, Knights) in a protracted battle for dominance. As players complete mission objectives, they use swords, axes, and spears to kill enemy warriors in melee-style combat.', 49.55, 7, 13, 'https://cdn.akamai.steamstatic.com/steam/apps/304390/header.jpg?t=1710516613'),
+('AI00008', 'Fallout 4', 'Fallout 4 is an open-world role-playing game developed by Bethesda Game Studios. In it, the player begins as a parent and spouse in the year 2077, but then must enter Vault 111 to survive the nuclear apocalypse.', 45.15, 1, 14, 'https://cdn.akamai.steamstatic.com/steam/apps/377160/header.jpg?t=1650909928'),
+('AI00009', 'Left 4 Dead 2', 'This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns. You\'ll play as one of four new survivors armed with a wide and devast', 14.45, 3, 15, 'https://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg?t=1675801903'),
+('AI00010', 'Outlast 2', 'Outlast 2 is a first-person survival horror title set to take players on a wild ride through a rural area Arizona as they investigate the gruesome attempted murder of a pregnant woman found on the side of the road.', 38.12, 4, 16, 'https://cdn.akamai.steamstatic.com/steam/apps/414700/header.jpg?t=1618944453'),
+('AI00011', 'Resident Evil Village', 'Resident Evil Village is a 2021 survival horror game developed and published by Capcom. It is the sequel to Resident Evil 7: Biohazard (2017) and the tenth main game of the Resident Evil series. Players control Ethan Winters, who searches for his kidnappe', 88.00, 6, 7, 'https://cdn.akamai.steamstatic.com/steam/apps/1196590/header.jpg?t=1701395391'),
+('AI00012', 'The Binding of Isaac', 'The Binding of Isaac is a top-down dungeon crawler game, presented using two-dimensional sprites, in which the player controls Isaac or other unlockable characters as they explore the dungeons located in Isaac\'s basement.', 70.56, 5, 2, 'https://cdn.akamai.steamstatic.com/steam/apps/250900/capsule_616x353.jpg?t=1617174663'),
+('AI00013', 'Counter Strike 2', 'For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2.', 20.00, 5, 1, 'https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1698860631'),
+('AI00014', 'Dead by Daylight', 'Dead by Daylight is a multiplayer (4vs1) horror game where one player takes on the role of the savage Killer, and the other four players play as Survivors, trying to escape the Killer and avoid being caught, tortured and killed.', 2.54, 2, 3, 'https://cdn.akamai.steamstatic.com/steam/apps/381210/header.jpg?t=1710268442'),
+('AI00015', 'Plants vs. Zombies™ Garden Warfare 2: Deluxe Edition', 'In this hilarious, action-packed shooter, zombie leader Dr. Zomboss has strengthened his horde and rebuilt suburbia as a zombie utopia. But hope remains, because for the first time the plants are taking the offensive in an all-out attack to reclaim their ', 70.00, 1, 4, 'https://cdn.akamai.steamstatic.com/steam/apps/1922560/header.jpg?t=1707771436'),
+('AI00016', 'Palworld', 'Palworld is an upcoming action-adventure, survival, and monster-taming game created and published by Japanese developer Pocket Pair. The game is set in an open world populated with animal-like creatures called Pals, which players can battle and capture to', 38.56, 3, 5, 'https://cdn.akamai.steamstatic.com/steam/apps/1623730/header.jpg?t=1707904340'),
+('AI00017', 'Mortal Kombat 1', 'The game introduces a reborn Mortal Kombat Universe that has been created by the Fire God Liu Kang, featuring reimagined versions of iconic characters as they\'ve never been seen before, along with a new fighting system, game modes, bone krushing finishing', 12.90, 4, 6, 'https://cdn.akamai.steamstatic.com/steam/apps/1971870/header.jpg?t=1709136014'),
+('AI00018', 'Street Fighter V', 'An arcade version exclusive to Japan was released by Taito in 2019. Similar to the previous games in the Street Fighter series, Street Fighter V features a side-scrolling fighting gameplay system. The game also introduces the V-Gauge, which builds as the ', 45.00, 5, 7, 'https://cdn.akamai.steamstatic.com/steam/apps/310950/header.jpg?t=1705467952'),
+('AI00019', 'Street Fighter™ 6', 'Street Fighter 6 represents the next evolution of the Street Fighter, with three distinct game modes, including Fighting Ground, World Tour and Battle Hub. The experience also includes innovative new gameplay features, plus enhanced visuals for every aspe', 13.70, 5, 7, 'https://cdn.akamai.steamstatic.com/steam/apps/1364780/header_alt_assets_9.jpg?t=1709012771'),
+('AI00020', 'Hollow Knight', 'Hollow Knight is a classically styled 2D action adventure across a vast interconnected world. Explore twisting caverns, ancient cities and deadly wastes, battle tainted creatures and befriend bizarre bugs and solve ancient mysteries at the kingdom\'s heart', 16.50, 1, 8, 'https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg?t=1695270428'),
+('AI00021', 'Detroit: Become Human', 'Set in Detroit City during the year 2038, the city has been revitalized by the invention and introduction of Androids into everyday life. But when Androids start behaving as if they are alive, events begin to spin out of control.', 66.00, 6, 17, 'https://cdn.akamai.steamstatic.com/steam/apps/1222140/header.jpg?t=1667468479');
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,7 @@ INSERT INTO `category` (`category_id`, `category`) VALUES
 
 CREATE TABLE `exchange` (
   `exchange_section_id` varchar(255) NOT NULL,
-  `user_id` varchar(255) NOT NULL,
+  `user_id` int(255) NOT NULL,
   `exchange_date` datetime NOT NULL,
   `exchange_amount` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -144,7 +144,7 @@ INSERT INTO `publisher` (`publisher_id`, `publisher_name`, `publisher_address`) 
 
 CREATE TABLE `transactions` (
   `transaction_id` varchar(255) NOT NULL,
-  `user_id` varchar(255) NOT NULL,
+  `user_id` int(255) NOT NULL,
   `asset_id` varchar(255) NOT NULL,
   `transaction_date` date NOT NULL,
   `quantity` int(255) NOT NULL,
@@ -158,7 +158,7 @@ CREATE TABLE `transactions` (
 --
 
 CREATE TABLE `users` (
-  `user_id` varchar(255) NOT NULL,
+  `user_id` int(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `user_email` varchar(255) DEFAULT NULL,
@@ -174,18 +174,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `user_email`, `full_name`, `dob`, `user_address`, `phone_number`, `coin`) VALUES
-('U02389', 'admin', 'admin', 'admin@gmail.com', 'Jessica Martinez', '1990-07-08', '222 Pine St, Riverdale, USA', '555-987-6543', 50),
-('U03245', 'test', 'test', 'test@example.com', 'James Johnson', '1979-06-15', '555 Elm St, Hillcrest, USA', '555-210-9876', 120.75),
-('U03421', 'chrisd', 'Chri$123', 'chrisd@example.com', 'Christopher Davis', '1985-04-25', '333 Cedar St, Hillcrest, USA', '555-789-1234', 300.25),
-('U04321', 'ethanb', '3th@nB!wn', 'ethanb@example.com', 'Ethan Brown', '1974-12-30', '999 Cedar St, Riverdale, USA', '555-789-1234', 180.25),
-('U04567', 'michael82', 'M!ch@el82', 'michael82@example.com', 'Michael Smith', '1976-09-20', '888 Maple St, Lakeside, USA', '555-876-5432', 75.75),
-('U05432', 'isabellas', '1s@b3ll@', 'isabellas@example.com', 'Isabella Smith', '1998-05-05', '888 Pine St, Mountainview, USA', '555-654-2109', 60),
-('U05612', 'davidw', 'Dav1dW!lson', 'davidw@example.com', 'David Wilson', '1982-11-05', '111 Oak St, Springdale, USA', '555-654-2109', 200),
-('U06789', 'jacobm', 'J@cob321', 'jacobm@example.com', 'Jacob Martinez', '1981-08-12', '777 Oak St, Springdale, USA', '555-321-7890', 210),
-('U07689', 'emilyw', 'Em!lyW!ls0n', 'emilyw@example.com', 'Emily Wilson', '1987-10-25', '444 Cedar St, Lakeside, USA', '555-987-6543', 175.5),
-('U08796', 'emilybrown', 'Em!lyB0wn', 'emilybrown@example.com', 'Emily Brown', '1995-05-10', '999 Elm St, Mountainview, USA', '555-321-7890', 100.25),
-('U08976', 'sophiag', 'S0ph!@123', 'sophiag@example.com', 'Sophia Garcia', '1993-03-20', '666 Maple St, Riverside, USA', '555-876-5432', 90.25),
-('U09834', 'sarahj', 'S@rah123', 'sarahj@example.com', 'Sarah Johnson', '1988-03-15', '777 Cedar St, Riverside, USA', '555-210-9876', 150.5);
+(1, 'admin', 'admin', 'admin@gmail.com', 'Jessica Martinez', '1990-07-08', '222 Pine St, Riverdale, USA', '555-987-6543', 50),
+(2, 'test', 'test', 'test@example.com', 'James Johnson', '1979-06-15', '555 Elm St, Hillcrest, USA', '555-210-9876', 120.75),
+(3, 'chrisd', 'Chri$123', 'chrisd@example.com', 'Christopher Davis', '1985-04-25', '333 Cedar St, Hillcrest, USA', '555-789-1234', 300.25),
+(4, 'ethanb', '3th@nB!wn', 'ethanb@example.com', 'Ethan Brown', '1974-12-30', '999 Cedar St, Riverdale, USA', '555-789-1234', 180.25),
+(5, 'michael82', 'M!ch@el82', 'michael82@example.com', 'Michael Smith', '1976-09-20', '888 Maple St, Lakeside, USA', '555-876-5432', 75.75),
+(6, 'isabellas', '1s@b3ll@', 'isabellas@example.com', 'Isabella Smith', '1998-05-05', '888 Pine St, Mountainview, USA', '555-654-2109', 60),
+(7, 'davidw', 'Dav1dW!lson', 'davidw@example.com', 'David Wilson', '1982-11-05', '111 Oak St, Springdale, USA', '555-654-2109', 200),
+(8, 'jacobm', 'J@cob321', 'jacobm@example.com', 'Jacob Martinez', '1981-08-12', '777 Oak St, Springdale, USA', '555-321-7890', 210),
+(9, 'emilyw', 'Em!lyW!ls0n', 'emilyw@example.com', 'Emily Wilson', '1987-10-25', '444 Cedar St, Lakeside, USA', '555-987-6543', 175.5),
+(10, 'emilybrown', 'Em!lyB0wn', 'emilybrown@example.com', 'Emily Brown', '1995-05-10', '999 Elm St, Mountainview, USA', '555-321-7890', 100.25),
+(11, 'sophiag', 'S0ph!@123', 'sophiag@example.com', 'Sophia Garcia', '1993-03-20', '666 Maple St, Riverside, USA', '555-876-5432', 90.25),
+(12, 'sarahj', 'S@rah123', 'sarahj@example.com', 'Sarah Johnson', '1988-03-15', '777 Cedar St, Riverside, USA', '555-210-9876', 150.5);
 
 --
 -- Indexes for dumped tables
@@ -247,6 +247,12 @@ ALTER TABLE `category`
 --
 ALTER TABLE `publisher`
   MODIFY `publisher_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `user_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
