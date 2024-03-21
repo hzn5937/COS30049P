@@ -25,7 +25,7 @@
         <div class="card">
             <div class="left-container">
                 <img src="images/hbach.jpg" alt="profile image">
-                <h2>Ha Bach</h2>
+                <h2 id='content0'>Ha Bach</h2>
             </div>
 
             <div class="right-container">
@@ -44,7 +44,7 @@
                         <td id='content3' contenteditable='false'>0936071506</td>
                     </tr>
                     <tr>
-                        <td>Email :</td>
+                        <td>Interest :</td>
                         <td id='content4' contenteditable='false'>habach05032003@gmail.com</td>
                     </tr>
                     <tr>
