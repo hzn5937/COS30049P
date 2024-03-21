@@ -45,7 +45,7 @@
       include "php/button_switch.php";
     ?>
   </div>
-  <!-- <script src="script/script.js"></script> -->
+  <script src="script/script.js"></script>
   <!-- <script src="script/render.js"></script> -->
 </body>
 

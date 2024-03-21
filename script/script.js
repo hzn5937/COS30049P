@@ -5,13 +5,22 @@ window.onunload = function () {
     xhr.send();
 };
 
-fetch("api/get_coin.php")
-    .then(function (response) {
-        return response.json();
-    })
-    .then((data) => {
-        document.querySelector("#totalCoin").innerHTML = data;
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+function fetchCoin() {
+    fetch("api/get_coin.php")
+        .then(function (response) {
+            return response.json();
+        })
+        .then((data) => {
+            var coin = data['coin']
+            document.querySelector("#totalCoin").innerHTML = coin
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+}
+
+document.addEventListener("DOMContentLoaded", function()
+{
+    fetchCoin()
+})
+
