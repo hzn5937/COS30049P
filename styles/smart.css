@@ -9,10 +9,12 @@
     padding-right: 10%;
 }
 
+
+
 #contain label {
     display: inline-block;
-    margin-bottom: 30%;
-    font-size: 50px;
+    margin-bottom: 14%;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -32,4 +34,9 @@
     text-align: center;
 }
 
+#tokenAmount {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
 

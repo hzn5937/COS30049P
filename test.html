@@ -23,20 +23,14 @@
           <li><a href="exchange.php" <?php if(basename($_SERVER['PHP_SELF']) == 'exchange.php') { echo 'class="active"'; } ?>Exchange</a></li>
           <li><a href="about.php" <?php if(basename($_SERVER['PHP_SELF']) == 'about.php') { echo 'class="active"'; } ?>About Us</a></li>
       </ul>
-  
-      <span id="totalCoin"></span>
-      <a href="exchange.php"><img src="images/coin.png" class="coinIcon" alt="coin icon"></a>
-  
-      <a href="login.php" class="button" id="loginBtn">Log In / Sign Up</a>
-  
-      <a href="profile.php" class="profileButton" id="profileBtn"><i class="fas fa-user-alt"></i></a>
+      
     </nav>
 
     <div id="main">
       <div id="contain">
-        <label for="input">ETH Token</label><br>
-        <input type="text" id="input">
-        <p id="tokenAmount"></p>
+        <label for="input">ETH Token</label>
+        <p id="tokenAmount"></p><br>
+        <input type="text" id="input"><br><br>
         <button id="btn">Add Amount</button>
       </div>
     </div>
@@ -62,8 +56,8 @@
       </div>
   </footer>
 
-    <script src="/script/web3.min.js"></script>
-    <script src="/script/smart.js"></script>
+    <script src="script/web3.min.js"></script>
+    <script src="script/smart.js"></script>
   </body>
 
 </html>

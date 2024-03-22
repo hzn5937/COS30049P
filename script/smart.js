@@ -7,51 +7,51 @@ if (typeof web3 !== 'undefined') {
 web3.eth.defaultAccount = web3.eth.accounts[2];
 
 var contractAbi = [
-    {
-        "constant": true,
-        "inputs": [],
-        "name": "candidateName",
-        "outputs": [
-            {
-                "name": "",
-                "type": "string"
-            }
-        ],
-        "payable": false,
-        "type": "function",
-        "stateMutability": "view"
-    },
-    {
-        "constant": false,
-        "inputs": [
-            {
-                "name": "_name",
-                "type": "string"
-            }
-        ],
-        "name": "setCandidate",
-        "outputs": [],
-        "payable": false,
-        "type": "function",
-        "stateMutability": "nonpayable"
-    },
-    {
-        "inputs": [],
-        "type": "constructor",
-        "payable": true,
-        "stateMutability": "payable"
-    }
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "addToken",
+		"outputs": [],
+		"payable": false,
+		"type": "function",
+		"stateMutability": "nonpayable"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "tokenAmount",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"type": "function",
+		"stateMutability": "view"
+	},
+	{
+		"inputs": [],
+		"type": "constructor",
+		"payable": true,
+		"stateMutability": "payable"
+	}
 ];
 
-var contractAddress = '0xae9609924Fd15850509c785559B5dc1Fec36674e';
+var contractAddress = '0xB3f3BBa38A750F80f45cE8CDF0e143C0B26b8e43';
 
 var contract = web3.eth.contract(contractAbi).at(contractAddress);
 
-contract.candidateName(function (err, candidate) {
-    document.getElementById('tokenAmount').innerHTML = candidate;
+contract.tokenAmount(function (err, amount) {
+    document.getElementById('tokenAmount').innerHTML = amount;
 })
 document.getElementById('btn').addEventListener('click', function () {
     location.reload();
     let x = document.getElementById('input').value;
-    contract.setCandidate(String(x));
+    contract.addToken(parseInt(x));
 })
