@@ -25,14 +25,14 @@
         ?>
         
         <div class="main_content">
-            <h1>Exchange for Coins</h1>
+            <h1>Exchange For Coin</h1>
             <h3 id="coinCost"></h3>
-            <h4>Enter number of coin:</h4>
+            <h4>Enter Number Of Coin:</h4>
             <label for="exchange"></label>
             <input type="text" id="exchange" name="exchange" value="" placeholder="$" oninput="totalCostCheck();">
             <button id="btn" onclick="checkValue();">Pay</button>
             <a href="smart_contracts/index.html">Pay</a><br>
-            <p id="totalCost">Total cost: </p>
+            <p id="totalCost">Total Cost: </p>
 
             <h1>Transactions History</h1>
             <table id="history">
