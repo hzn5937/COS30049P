@@ -53,7 +53,7 @@ body {
     margin-right: 10px;
 }
 
-#totalCoin{
+#totalCoin {
     padding-left: 12%;
 }
 
@@ -101,10 +101,17 @@ nav li .active {
     font-weight: bolder;
 }
 
+nav .profileButton {
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    color: black;
+}
+
 .searchBox {
     display: inline;
-    align-items: left;
-}   
+    align-items: center;
+}
 
 .searchBox form {
     position: relative;
@@ -133,13 +140,6 @@ nav li .active {
 .searchBox button i {
     font-size: 17px;
     color: #999;
-}
-
-nav .profileButton {
-    background-color: white;
-    border-radius: 25px;
-    padding: 15px;
-    color: black;
 }
 
 /* Webpage Footer Styling */
