@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Candiates</title>
+    <title>Candidates</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -97,7 +97,7 @@
  // Add Your Contract ABI here!!!
 
       // Set Contract Address
-      var contractAddress = '0x28ca7F64eC2BB0716AE757E1de128F5AFc8a71E5'; // Add Your Contract address here!!!
+      var contractAddress = '0x3359302051d266F3AAc1B999eBCEF76CD09186Af'; // Add Your Contract address here!!!
 
       // Set the Contract
       var contract = web3.eth.contract(contractAbi).at(contractAddress);
@@ -110,8 +110,9 @@
       // Change the Candidate Name
       $('form').on('submit', function(event) {
         event.preventDefault();
-        contract.setCandidate($('input').val());
-      })
+        location.reload();
+        contract.setCandidate($('input').val())
+      });
 
     </script>
   </body>

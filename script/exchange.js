@@ -5,7 +5,7 @@ const decimal = /^\d*\.?\d+$/;
 
 const coinInput = document.getElementById("exchange"); //where to input money
 const totalCostElement = document.getElementById("totalCost");  //total money for coins below input
-const totalCoin = document.getElementById("totalCoin");  //coin cost
+const totalCoin = document.getElementById("totalCoin");  //total coin
 
 window.onload = function () {
     document.getElementById("coinCost").innerHTML = "Cost for 1 coin: " + coinCost + "$";
