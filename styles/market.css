@@ -13,10 +13,10 @@ h1 {
 
 footer {
   display: block;
+  margin-top: 26%;
 }
-
 .games {
-  display: inline-block;
+  display: inherit;
 }
 
 .window {
