@@ -111,7 +111,6 @@ nav .profileButton {
 
 .searchBox #searchForm {
     display: inline-block;
-    background-color: black;
 }
 
 .searchBox input[type="text"] {
