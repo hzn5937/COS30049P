@@ -19,9 +19,9 @@
 <body>
   <div class="container">
     <?php
-      session_start();
-      include "components/header.inc";
-      include_once 'db_connection.php';
+    session_start();
+    include "components/header.inc";
+    include_once 'db_connection.php';
     ?>
 
     <h1>Top Games</h1>
@@ -30,10 +30,22 @@
     </div>
 
     <div class="searchBox">
-        <form id="searchForm" action="market.php" method="get">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <input type="text" id="searchBar" name="search" placeholder="Search games..." required>
-        </form>
+      <form id="searchForm" action="market.php" method="get">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <input type="text" id="searchBar" name="search" placeholder="Search games..." required>
+      </form>
+
+      <div class="dropdown">
+        <button type="submit"><i class="fa fa-filter"></i></button>
+        <select name="gerne" id="gerne">
+          <option value="action">Action</option>
+          <option value="rpg">RPG</option>
+          <option value="casual">Casual</option>
+          <option value="puzzle">Puzzle</option>
+        </select>
+
+      </div>
+
     </div>
 
     <div class='games'>
@@ -41,8 +53,8 @@
     </div>
 
     <?php
-      include "components/footer.inc";
-      include "php/button_switch.php";
+    include "components/footer.inc";
+    include "php/button_switch.php";
     ?>
   </div>
   <script src="script/script.js"></script>

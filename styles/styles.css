@@ -35,10 +35,6 @@ body {
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 /* Main Content Styling */
 .container {
     width: 100%;
@@ -109,12 +105,13 @@ nav .profileButton {
 }
 
 .searchBox {
-    display: inline;
+    display: inline-block;
     align-items: center;
 }
 
-.searchBox form {
-    position: relative;
+.searchBox #searchForm {
+    display: inline-block;
+    background-color: black;
 }
 
 .searchBox input[type="text"] {
