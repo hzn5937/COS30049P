@@ -126,3 +126,7 @@ div.desc {
   /* Adjust the height as needed */
   margin-right: 60%;
 }
+
+.dropdown select {
+  display: none;
+}

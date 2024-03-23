@@ -38,13 +38,17 @@
       <div class="dropdown">
         <button type="submit"><i class="fa fa-filter"></i></button>
         <select name="gerne" id="gerne">
-          <option value="action">Action</option>
-          <option value="rpg">RPG</option>
-          <option value="casual">Casual</option>
-          <option value="puzzle">Puzzle</option>
+          <option value="defauly">Filter...</option>
+          <option value="1">Adventure</option>
+          <option value="2">Indie</option>
+          <option value="3">Action</option>
+          <option value="4">Casual</option>
+          <option value="5">Strategy</option>
+          <option value="6">RPG</option>
+          <option value="7">Simulation</option>
         </select>
-
       </div>
+
 
     </div>
 
