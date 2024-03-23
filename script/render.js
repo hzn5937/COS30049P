@@ -13,13 +13,22 @@ function render(url) {
                 </a>
                 <div class='cashless'>
                     <span>${item.price}</span><img src='images/coin.png' alt='Your Coin' class='coin-image'>
-                    <a href='payment.php' class='button2'>Buy</a>
+                    <a href='payment.php' id='${item.id}' class='button2'>Buy</a>
                 </div>
                 </div>
             </div>
             `;
             });
             document.querySelector(".games").innerHTML = htmls.join("");
+
+            data.forEach(function (item) {
+                var button = document.getElementById(item.id);
+                button.onclick = function (e) {
+                    const id = item.id;
+                    e.preventDefault();
+                    window.location.href = `payment.php?id=${id}`;
+                };
+            });
         })
         .catch((error) => {
             console.log(error);

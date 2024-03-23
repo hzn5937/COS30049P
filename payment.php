@@ -1,3 +1,30 @@
+<?php
+    require_once ('db_connection.php');
+
+    if (isset($_GET['id']))
+    {
+        $id = $_GET['id'];
+    }
+
+    $sql = "SELECT name, price, image_path FROM asset WHERE asset_id = '$id'";
+
+    $result = $conn->query($sql);
+
+    $response = array();
+
+    if ($result)
+    {
+        $x = 0;
+        while ($row = mysqli_fetch_assoc($result))
+        {
+            $response[$x]['name'] = $row['name'];
+            $response[$x]['price'] = $row['price'];
+            $response[$x]['image_path'] = $row['image_path'];
+            $x++;
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +56,7 @@
                 </legend>
 
                 <div class="shopping-cart">
-                    <table>
+                    <table id="shopping-table">
                         <tr>
                             <th>Product</th>
                             <th>Quantity</th>
@@ -38,56 +65,16 @@
                         <tr>
                             <td>
                                 <div class="product-info">
-                                    <img src="images/mine_small.jpg">
+                                    <img src="<?php echo $response[0]['image_path'] ?>">
                                     <div>
-                                        <p>Minecraft</p>
-                                        <small>Java Edition</small>
+                                        <p><?php echo $response[0]['name']; ?></p>
                                     </div>
                                 </div>
                             </td>
-                            <td><input class="quantityBox" id="quantityBox1" type="number" value="1"><i
-                                    class="fa fa-plus" id="plus1"></i><i class="fa fa-minus" id="minus1"></i></td>
+                            <td><input class="quantityBox" id="quantityBox1" type="number" value="1" disabled></td>
                             <td>
                                 <div class="price-info">
-                                    <p id="price1">30</p>
-                                    <img src="images/coin.png">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="product-info">
-                                    <img src="images/fifa_small.jpg">
-                                    <div>
-                                        <p>Fifa 23</p>
-                                        <small>Standard Edition</small>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><input class="quantityBox" id="quantityBox2" type="number" value="1"><i
-                                    class="fa fa-plus" id="plus2"></i><i class="fa fa-minus" id="minus2"></i></td>
-                            <td>
-                                <div class="price-info">
-                                    <p id="price2">30</p>
-                                    <img src="images/coin.png">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="product-info">
-                                    <img src="images/gta_small.jpg">
-                                    <div>
-                                        <p>Grand Thief Auto V</p>
-                                        <small>Premium Edition</small>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><input class="quantityBox" id="quantityBox3" type="number" value="1"><i
-                                    class="fa fa-plus" id="plus3"></i><i class="fa fa-minus" id="minus3"></i></td>
-                            <td>
-                                <div class="price-info">
-                                    <p id="price3">30</p>
+                                    <p id="price1"><?php echo $response[0]['price']; ?></p>
                                     <img src="images/coin.png">
                                 </div>
                             </td>
@@ -102,7 +89,7 @@
                         <td>Subtotal</td>
                         <td>
                             <div class="price-info">
-                                <p id="subTotalPrice">90</p>
+                                <p id="subTotalPrice"><?php echo $response[0]['price'] ?></p>
                                 <img src="images/coin.png">
                             </div>
                         </td>
@@ -125,7 +112,7 @@
                         <td>Total</td>
                         <td>
                             <div class="total-price-info">
-                                <p id="totalPrice">90</p>
+                                <p id="totalPrice"><?php echo $response[0]['price'] ?></p>
                                 <img src="images/coin.png">
                             </div>
                         </td>
@@ -140,7 +127,7 @@
         include "php/button_switch.php";
         ?>
     </div>
-    <script src="script/quantity.js"></script>
+    <script src="script/payment.js"></script>
     <script src="script/script.js"></script>
 </body>
 

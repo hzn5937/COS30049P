@@ -10,7 +10,7 @@
         $category = $_GET['category'];
     }
 
-    $sql = "SELECT * FROM asset";
+    $sql = "SELECT asset_id, name, price, image_path FROM asset";
 
     if (!empty($search) && empty($category)) {
         $sql .= " WHERE name LIKE '%$search%'";
@@ -32,6 +32,7 @@
         $x = 0;
         while ($row = mysqli_fetch_assoc($result))
         {
+            $response[$x]['id'] = $row['asset_id'];
             $response[$x]['name'] = $row['name'];
             $response[$x]['price'] = $row['price'];
             $response[$x]['image_path'] = $row['image_path'];
