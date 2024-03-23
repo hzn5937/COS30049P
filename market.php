@@ -38,7 +38,7 @@
       <div class="dropdown">
         <button type="submit"><i class="fa fa-filter"></i></button>
         <select name="gerne" id="gerne">
-          <option value="defauly">Filter...</option>
+          <option value="default">Filter...</option>
           <option value="1">Adventure</option>
           <option value="2">Indie</option>
           <option value="3">Action</option>
