@@ -15,7 +15,7 @@
     color: indianred;
 }
 
-.main_content #btn {
+.main_content #btn, #smart {
     text-align: center;
     background-color: indianred;
     border: none;
@@ -33,3 +33,6 @@
     border-collapse: collapse;
 }
 
+#smart {
+    text-decoration: none;
+}
