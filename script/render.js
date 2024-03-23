@@ -29,6 +29,8 @@ function render(url) {
 document.addEventListener("DOMContentLoaded", function () {
     var searchForm = document.getElementById("searchForm");
     var searchBar = document.getElementById("searchBar");
+    var filter = document.getElementById("gerne");
+    const url = "api/get_data.php";
 
     searchForm.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -36,6 +38,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     searchBar.addEventListener("input", function () {
         var searchTerm = searchBar.value;
-        render(`api/get_data.php?search=${searchTerm}`);
+        var category = filter.value;
+        const url = "api/get_data.php";
+
+        if (category === "default" && searchTerm !== "") {
+            param = `search=${searchTerm}`;
+        } else if (category !== "default" && searchTerm === "") {
+            param = `category=${category}`;
+        } else {
+            param = `search=${searchTerm}&category=${category}`;
+        }
+        console.log(`${url}?${param}`);
+        render(`${url}?${param}`);
+    });
+
+    filter.addEventListener("change", function () {
+        var searchTerm = searchBar.value;
+        var category = filter.value;
+        if (category === "default") {
+            category = "";
+        }
+
+        if (category === "default" && searchTerm !== "") {
+            param = `search=${searchTerm}`;
+        } else if (category !== "default" && searchTerm === "") {
+            param = `category=${category}`;
+        } else {
+            param = `search=${searchTerm}&category=${category}`;
+        }
+        console.log(`${url}?${param}`);
+        render(`${url}?${param}`);
     });
 });

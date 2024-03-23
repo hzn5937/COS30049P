@@ -5,11 +5,21 @@
     {
         $search = $_GET['search'];
     }
+    if (isset($_GET['category']))
+    {
+        $category = $_GET['category'];
+    }
 
     $sql = "SELECT * FROM asset";
 
-    if (!empty($search)) {
+    if (!empty($search) && empty($category)) {
         $sql .= " WHERE name LIKE '%$search%'";
+    }
+    else if (empty($search) && !empty($category)) {
+        $sql .= " WHERE category_id = '$category'";
+    }
+    else if (!empty($search) && !empty($category)) {
+        $sql .= " WHERE name LIKE '%$search%' AND category_id = '$category'";
     }
     
 
