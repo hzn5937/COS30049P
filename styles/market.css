@@ -7,6 +7,18 @@ h1 {
   color: indianred;
 }
 
+.container {
+  display: block;
+}
+
+footer {
+  display: block;
+}
+
+.games {
+  display: inline-block;
+}
+
 .window {
   border: 5px solid indianred;
 }
@@ -151,3 +163,4 @@ div.desc {
 .dropdown-content option:hover {
   background-color: #f1f1f1;
 }
+
