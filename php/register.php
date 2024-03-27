@@ -4,7 +4,7 @@
 
     $_SESSION['errMsg'] = "";
 
-    $query = "SELECT username, email from users";
+    $query = "SELECT username, user_email from users";
 
     $result = $conn->query($query);
 
@@ -15,7 +15,7 @@
         while ($row = mysqli_fetch_assoc($result))
         {
             $array[$x]['username'] = $row['username'];
-            $array[$x]['email'] = $row['email'];
+            $array[$x]['user_email'] = $row['user_email'];
             $x++;
         }
     }
@@ -40,7 +40,7 @@
         {
             $_SESSION['errMsg'] .= "<p>Username already exists!</p>";
         }
-        if ($email === $array[$i]['email'])
+        if ($email === $array[$i]['user_email'])
         {
             $_SESSION['errMsg'] .= "<p>Email already exists!</p>";
         }
@@ -52,7 +52,7 @@
     }
     else
     {
-        $query = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
+        $query = "INSERT INTO users (username, user_email, password) VALUES ('$username', '$email', '$password')";
         $result = $conn->query($query);
         if ($result)
         {

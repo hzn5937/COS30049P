@@ -104,7 +104,7 @@
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" id="email" name="email" required>
+                    <input type="user_email" id="user_email" name="user_email" required>
                     <label for="email">Email</label>
                 </div>
                 <div class="input-box">

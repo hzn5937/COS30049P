@@ -56,8 +56,8 @@
             </div>
 
             <div class="info_card">
-                <img src="images/hbach.jpg" alt="Member 4">
-                <h2>Nguyen Ha Bach</h2>
+                <img src="images/ducnahh.jpg" alt="Member 4">
+                <h2>Nguyen Duc Anh</h2>
                 <p>
                         <!-- 21 years old excited and enthusiastic about programming and video games. Still figuring out life as it goes. -->
                        
