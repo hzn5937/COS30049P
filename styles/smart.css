@@ -40,3 +40,26 @@
     padding: 0;
 }
 
+#history {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+#history th {
+    background-color:indianred;
+}
+
+#history td,th {
+    width: 60px;
+    height: 20px;
+    text-align: center;
+}
+
+#history th,td {
+    border: 1px solid black;
+}
+
+#history td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
