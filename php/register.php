@@ -24,9 +24,9 @@
     {
         $username = $_POST['username'];
     }
-    if (isset($_POST['email']))
+    if (isset($_POST['user_email']))
     {
-        $email = $_POST['email'];
+        $email = $_POST['user_email'];
     }
     if (isset($_POST['password']))
     {
