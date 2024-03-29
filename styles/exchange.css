@@ -28,26 +28,7 @@
     font-size: 16px;
 }
 
-.main_content #history {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
 #smart {
     text-decoration: none;
-}
-
-#history th {
-    background-color:indianred;
-}
-
-#history td,th {
-    width: 60px;
-    height: 20px;
-    text-align: center;
-}
-
-#history th,td {
-    border: 1px solid black;
 }
 
