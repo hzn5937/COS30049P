@@ -56,7 +56,10 @@
                 <div class="button">
                     <button class="button1" id="signoutBtn">Signout</button>
                     <button class="button2">Edit</button>
+                    <a href="history.php" class="button2" role="button" aria-pressed="true">History</a>
+                    
                 </div>
+                
             </div>
 
         </div>
