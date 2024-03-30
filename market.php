@@ -55,8 +55,8 @@
     <div class='games'>
       <script>render("api/get_data.php")</script>
     </div>
-
     <?php
+    
     include "components/footer.inc";
     include "php/button_switch.php";
     ?>

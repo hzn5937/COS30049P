@@ -6,6 +6,50 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.9s;
+}
+
+.button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+}
+
+
+.button2:hover span {
+    padding-right: 2px;
+}
+
+.button2:hover {
+    background-color: #0056b3;
+}
+
+/* Style the button */
+.button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: indianred;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 5%;
+    position: relative;
+    cursor: pointer;
+}
+
 .shopping-cart table {
     border-collapse: collapse;
     width: 100%;
@@ -139,3 +183,7 @@ td input {
 }
 
 
+#totalCoin
+{
+    color: white;
+}

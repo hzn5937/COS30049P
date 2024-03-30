@@ -6,7 +6,7 @@
         $id = $_GET['id'];
     }
 
-    $sql = "SELECT name, price, image_path FROM asset WHERE asset_id = '$id'";
+    $sql = "SELECT asset_id, name, price, image_path FROM asset WHERE asset_id = '$id'";
 
     $result = $conn->query($sql);
 
@@ -17,6 +17,7 @@
         $x = 0;
         while ($row = mysqli_fetch_assoc($result))
         {
+            $response[$x]['id'] = $row['asset_id'];
             $response[$x]['name'] = $row['name'];
             $response[$x]['price'] = $row['price'];
             $response[$x]['image_path'] = $row['image_path'];
@@ -36,18 +37,19 @@
     <meta name="description" content="Assignment 01 - Static Website">
     <title>Payment Page</title>
     <link rel="icon" href="./images/weblogo.png">
-    <link rel="stylesheet" href="styles/payment.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/payment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <?php
+    <?php
         session_start();
         include "components/header.inc";
-        ?>
+    ?>
+    <div class="container">
+        
 
         <div class="shopping-container">
             <fieldset class="cart-table">
@@ -65,9 +67,9 @@
                         <tr>
                             <td>
                                 <div class="product-info">
-                                    <img src="<?php echo $response[0]['image_path'] ?>">
+                                    <img src="<?php echo $response[0]['image_path']; ?>">
                                     <div>
-                                        <p><?php echo $response[0]['name']; ?></p>
+                                        <p?><?php echo $response[0]['name']; ?></p>
                                     </div>
                                 </div>
                             </td>
@@ -103,6 +105,7 @@
                             </div>
                         </td>
                     </tr>
+                    
                 </table>
             </div>
 
@@ -117,16 +120,25 @@
                             </div>
                         </td>
                     </tr>
+                    <tr>
+                        <td><a href="api/checkout.php?id=<?php echo $response[0]['id']; ?>" class="button2">Buy</a></td>
+                    </tr>
                 </table>
             </div>
-
         </div>
+    </div>
 
-        <?php
+    <?php
+        if (isset($_SESSION['msg']))
+        {
+          echo $_SESSION['msg'];
+          echo "<script>alert('".$_SESSION['msg']."')</script>";
+          unset($_SESSION['msg']);
+        }
+
         include "components/footer.inc";
         include "php/button_switch.php";
-        ?>
-    </div>
+    ?>
     <script src="script/payment.js"></script>
     <script src="script/script.js"></script>
 </body>
