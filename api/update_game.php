@@ -37,7 +37,7 @@
 
     $conn->close();
 
-    header("Location: ../test.php");
+    header("Location: ../add_game.php");
     exit();
 
 
