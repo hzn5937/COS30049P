@@ -18,53 +18,42 @@
     <div class="container">
         <?php
             session_start();
-        include "components/header.inc";
-            
+            include "components/header.inc";
         ?>
         
         <div class="main_content">
-           
-
             <h1>Transactions History</h1>
             <table id="history">
                 <tr>
-                    <th>ID</th>
-                    <th>Balance</th>
-                    <th>Date</th>
+                    <th>Purchase ID</th>
+                    <th>Purchased Date</th>
                     <th>Price</th>
+                    <th>User ID</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>65</td>
-                    <td>2024-03-07</td>
-                    <td>10.2</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>158</td>
-                    <td>2024-03-09</td>
-                    <td>10.2</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>1256</td>
-                    <td>2024-03-17</td>
-                    <td>20.5</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>48</td>
-                    <td>2024-03-20</td>
-                    <td>10.5</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>379</td>
-                    <td>2024-03-23</td>
-                    <td>30</td>
-                </tr>
-            </table>
+                <?php
+                // Include the database connection file
+                require_once "db_connection.php";
 
+                // Query to fetch transaction history from the database
+                $sql = "SELECT * FROM purchase_history";
+                $result = $conn->query($sql);
+
+                // Check if there are results
+                if ($result->num_rows > 0) {
+                    // Output data of each row
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<tr>";
+                        echo "<td>" . $row["purchase_id"] . "</td>";
+                        echo "<td>" . $row["purchased_date"] . "</td>";
+                        echo "<td>" . $row["price"] . "</td>";
+                        echo "<td>" . $row["user_id"] . "</td>";
+                        echo "</tr>";
+                    }
+                } else {
+                    echo "<tr><td colspan='4'>No transactions found.</td></tr>";
+                }
+                ?>
+            </table>
         </div>
 
         <?php

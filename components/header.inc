@@ -6,6 +6,7 @@
         <li><a href="market.php" <?php if(basename($_SERVER['PHP_SELF']) == 'market.php') { echo 'class="active"'; } ?>>Our Product</a></li>
         <li><a href="exchange.php" <?php if(basename($_SERVER['PHP_SELF']) == 'exchange.php') { echo 'class="active"'; } ?>>Exchange</a></li>
         <li><a href="about.php" <?php if(basename($_SERVER['PHP_SELF']) == 'about.php') { echo 'class="active"'; } ?>>About Us</a></li>
+        <li><a href="add_game.php" <?php if(basename($_SERVER['PHP_SELF']) == 'add_game.php') { echo 'class="active"'; } ?>>Add</a></li>
     </ul>
 
     <span id="totalCoin"></span>
