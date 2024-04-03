@@ -22,19 +22,36 @@
             {
                 header("Location: login.php");
             }
+            else {
+                $name = $_SESSION["username"];
+            }
         ?>
         
         <div class="main_content">
             <h1>Exchange For Coin</h1>
             <h3 id="coinCost"></h3>
             <h4>Enter Number Of Coin:</h4>
+            <form action="" method="post">
             <label for="exchange"></label>
             <input type="text" id="exchange" name="exchange" value="" placeholder="$" oninput="totalCostCheck();">
-            <button id="btn" onclick="checkValue();">Pay</button>
+            <!-- onclick="checkValue();" -->
+            <button id="btn" type="submit" >Pay</button>  
+            </form>
             <a id="smart" href="smart.html">Ether</a><br>
             <p id="totalCost">Total Cost: </p>
         </div>
-
+        <?php
+            require_once "db_connection.php";
+            if (isset($_POST["exchange"])) {
+                $coin = $_POST["exchange"];
+                $query = "UPDATE users SET coin = coin + $coin WHERE username = '$name';";
+                $conn->query($query);
+                $conn->close();
+            }
+            else if (isset($_POST["exchange"]) === null)  {
+              echo "Wrong amount of coins";
+            }
+        ?>
         <?php
             include "components/footer.inc";
             include "php/button_switch.php";
