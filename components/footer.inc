@@ -14,7 +14,7 @@
             <li class="list-inline-item"><a href="market.php">Our Product</a></li>
             <li class="list-inline-item"><a href="exchange.php">Exchange</a></li>
             <li class="list-inline-item"><a href="about.php">About Us</a></li>
-            <li class="list-inline-item"><a href="add_game.php">About Us</a></li>
+            <li class="list-inline-item"><a href="add_game.php">Add Game</a></li>
         </ul>
         <p>&copy; GameDex, Ltd. All Rights Reserved.</p>
     </div>
